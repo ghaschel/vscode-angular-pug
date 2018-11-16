@@ -1,6 +1,14 @@
 {
   "patterns": [
     {
+      "captures": {
+        '1': {
+          name: 'keyword.operator.exclamation'
+        },
+        '2': {
+          name: 'constant.character.entity.html'
+        }
+      },
       "match": "^(!!!|doctype)(\\s*[a-zA-Z0-9-_]+)?",
       "name": "meta.tag.sgml.doctype.html",
       "comment": "Doctype declaration."
@@ -14,7 +22,7 @@
     {
       "begin": "^(\\s*)//",
       "end": "^(?!(\\1\\s)|\\s*$)",
-      "name": "string.comment.buffered.block.pug",
+      "name": "comment.buffered.block.pug",
       "comment": "Buffered (html) comments.",
       "patterns": [{
         "captures": {
@@ -23,7 +31,7 @@
           }
         },
         "match": "^\\s*(//)(?!-)",
-        "name": "string.comment.buffered.block.pug",
+        "name": "comment.buffered.block.pug",
         "comment": "Buffered comments inside buffered comments will generate invalid html."
       }]
     },
@@ -240,6 +248,12 @@
             },
             {
               "include": "#interpolated_error"
+            },
+            {
+              "include": "#angular-interpolations"
+            },
+            {
+              "include": "#regex"
             }
           ]
         }
@@ -289,6 +303,12 @@
             },
             {
               "include": "#interpolated_error"
+            },
+            {
+              "include": "#angular-interpolations"
+            },
+            {
+              "include": "#regex"
             }
           ]
         },
@@ -310,6 +330,12 @@
                 },
                 {
                   "include": "#interpolated_error"
+                },
+                {
+                  "include": "#angular-interpolations"
+                },
+                {
+                  "include": "#regex"
                 }
               ]
             },
@@ -327,6 +353,12 @@
             },
             {
               "include": "#interpolated_error"
+            },
+            {
+              "include": "#angular-interpolations"
+            },
+            {
+              "include": "#regex"
             }
           ]
         },

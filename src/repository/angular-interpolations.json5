@@ -1,0 +1,32 @@
+{
+  repository: {
+    'angular-interpolations': {
+      patterns: [
+        {
+          beginCaptures: {
+            '0': {
+              name: 'string.regexp.interpolation.begin'
+            }
+          },
+          patterns: [
+            {
+              match: '\\?\\.|\\!\\.|\\.|\\!|\\?|\\:|\\;|\\,',
+              name: 'keyword.operator.navigation'
+            },
+            {
+              include: 'source.js#expression'
+            }
+          ],
+          begin: '\\{\\{\\{?',
+          endCaptures: {
+            '0': {
+              name: 'string.regexp.interpolation.end'
+            }
+          },
+          end: '\\}\\}\\}?',
+          name: 'expression.embedded.angular'
+        }
+      ]
+    }
+  }
+}

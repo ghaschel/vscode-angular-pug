@@ -4,7 +4,8 @@
       "match": "([^\\s(),=/!]+)\\s*",
       "captures": {
         "1": {
-          "name": "entity.other.attribute-name.tag.pug"
+          name: 'support.type.object.module.html' 
+          //"name": "entity.other.attribute-name.tag.pug"
         }
       }
     }
