@@ -14,9 +14,6 @@
 
 Nothing yet done
 
-> Note: VSCode's default Dark+ theme doesn't have the highlighting displayed in these images. For that effect I recommend using [dark-plus-syntax](https://marketplace.visualstudio.com/items?itemName=dunstontc.dark-plus-syntax) theme.
-> Other themes that have similar highlighting: [cobalt2](https://marketplace.visualstudio.com/items?itemName=wesbos.theme-cobalt2), [dracula / dracula soft](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula) and [and old hope classic](https://marketplace.visualstudio.com/items?itemName=dustinsanders.an-old-hope-theme-vscode).
-
 ## Summary
 
 - Nothing here yet
