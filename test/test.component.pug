@@ -1,1 +1,221 @@
-sadsadas
+| DOCTYPE
+doctype html
+
+| COMMENTS
+// COMMENTS
+
+| INVALID ATTRIBUTES
+a(charset='', coords='', rev='', shape='')
+area(nohref='')
+body(alink='', background='', bgcolor='', link='', vlink='')
+br(clear='')
+dl(compact='')
+menu(compact='')
+title Teste
+hr(align='', noshade='', size='', width='')
+html(version='')
+iframe(align='', frameborder='', longdesc='', marginheight='', marginwidth='', scrolling='')
+img(align='', hspace='', longdesc='', name='', vspace='')
+li(type='')
+link(charset='', rev='', target='')
+div(align='')
+h1(align='')
+h2(align='')
+h3(align='')
+h4(align='')
+h5(align='')
+h6(align='')
+input(align='')
+legend(align='')
+p(align='')
+ol(compact='', type='')
+ul(compact='teste', type='')
+object(archive='', border='', classid='', codebase='', codetype='', declare='', hspace='', standby='', vspace='',
+align='')
+param(type='', valuetype='')
+pre(width='').
+t(abbr='', axis='')
+table(bgcolor='', border='', cellpadding='', cellspacing='', frame='', rules='', scheme='', width='')
+
+| ANGULAR DIRECTIVES
+div#testing.testing-class(
+  [binding]='to.element',
+  [(binding)]='to.element',
+  [attr.href]='file?.link',
+  [style.font-size.px]='10',
+  [@$visibility]='module.$visibility',
+  [@visibility]='getMenuState()',
+  (click)='callback(parameter.test)',
+  *ngif='condition.met',
+  [test]='test.test();',
+  *ngfor='let a of b; index as c;',
+  #templatevariable=''
+)
+
+| ANGULAR INTERPOLATIONS
+| {{angular.interpolations || test}}
+| {{angular?.interpolations}}
+| {{angular!.interpolations}}
+
+| ENTITIES
+| &nbsp;
+| &#0098;
+
+| REGEX
+| /[^@\/#(){31231231}]/
+
+| DEPRECATED TAGS
+acronym
+applet
+basefont
+big
+center
+dir
+font
+isindex.class
+noframes
+s
+strike.test teste testestestestes
+tt
+u
+  | the single quote won't bother anymore
+  | neither will the double one "
+
+
+| DOM EVENTS
+div(DOMMenuItemActive='callback()',
+    DOMMenuItemInactive='callback()',
+    DOMMouseScroll='callback()',
+    onabort='callback()',
+    onafterprint='callback()',
+    onafterupdate='callback()',
+    onbeforecopy='callback()',
+    onbeforecut='callback()',
+    onbeforeeditfocus='callback()',
+    onbeforepaste='callback()',
+    onbeforeprint='callback()',
+    onbeforeunload='callback()',
+    onbeforeupdate='callback()',
+    onblur='callback()',
+    onbounce='callback()',
+    onbroadcast='callback()',
+    oncanplay='callback()',
+    oncanplaythrough='callback()',
+    oncellchange='callback()',
+    onchange='callback()',
+    onclick='callback()',
+    onclose='callback()',
+    oncommand='callback()',
+    oncommandupdate='callback()',
+    oncontextmenu='callback()',
+    oncopy='callback()',
+    oncut='callback()',
+    ondataavailable='callback()',
+    ondatasetchanged='callback()',
+    ondatasetcomplete='callback()',
+    ondblclick='callback()',
+    ondrag='callback()',
+    ondragdrop='callback()',
+    ondragend='callback()',
+    ondragenter='callback()',
+    ondragexit='callback()',
+    ondraggesture='callback()',
+    ondragleave='callback()',
+    ondragover='callback()',
+    ondragstart='callback()',
+    ondrop='callback()',
+    ondurationchange='callback()',
+    onemptied='callback()',
+    onended='callback()',
+    onerror='callback()',
+    onerrorupdate='callback()',
+    onfilterchange='callback()',
+    onfinish='callback()',
+    onfocus='callback()',
+    onformchange='callback()',
+    onforminput='callback()',
+    ongotpointercapture='callback()',
+    onhelp='callback()',
+    oninput='callback()',
+    oninvalid='callback()',
+    onkeydown='callback()',
+    onkeypress='callback()',
+    onkeyup='callback()',
+    onload='callback()',
+    onloadeddata='callback()',
+    onloadedmetadata='callback()',
+    onloadstart='callback()',
+    onlosecapture='callback()',
+    onlostpointercapture='callback()',
+    onmousedown='callback()',
+    onmousemove='callback()',
+    onmouseout='callback()',
+    onmouseover='callback()',
+    onmouseup='callback()',
+    onmousewheel='callback()',
+    onoverflow='callback()',
+    onoverflowchanged='callback()',
+    onpaste='callback()',
+    onpause='callback()',
+    onplay='callback()',
+    onplaying='callback()',
+    onpointercancel='callback()',
+    onpointerdown='callback()',
+    onpointerenter='callback()',
+    onpointerleave='callback()',
+    onpointermove='callback()',
+    onpointerout='callback()',
+    onpointerover='callback()',
+    onpointerup='callback()',
+    onpopuphidden='callback()',
+    onpopuphiding='callback()',
+    onpopupshowing='callback()',
+    onpopupshown='callback()',
+    onprogress='callback()',
+    onpropertychange='callback()',
+    onratechange='callback()',
+    onreadystatechange='callback()',
+    onreset='callback()',
+    onresize='callback()',
+    onrowenter='callback()',
+    onrowexit='callback()',
+    onrowinserted='callback()',
+    onrowsdelete='callback()',
+    onscroll='callback()',
+    onseeked='callback()',
+    onseeking='callback()',
+    onselect='callback()',
+    onselectstart='callback()',
+    onshow='callback()',
+    onstalled='callback()',
+    onstart='callback()',
+    onstop='callback()',
+    onsubmit='callback()',
+    onsuspend='callback()',
+    ontimeupdate='callback()',
+    onunderflow='callback()',
+    onunload='callback()',
+    onvolumechange='callback()',
+    onwaiting='callback()'
+)
+
+| STYLE INLINE
+div(
+    style='display: block;\
+           background-color: rgb(255, 255, 255);\
+           color: rgba(33, 254, 12, 1);'
+)
+
+| SCRIPT TAG
+script(type='text/javascript').
+  var a;
+  const a = test.callback();
+  let a = test;
+  function test(variable) {
+    return boolean;
+  }
+
+| GENERIC ATTRIBUTES
+div#test.test(aria-label='test', no-value='', novalidate='')
+input(type='')
+label.teste

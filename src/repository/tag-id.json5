@@ -1,8 +1,10 @@
 {
   repository: {
     "tag_id": {
-      "match": "#[\\w-]+",
-      "name": "entity.other.attribute-name.id.pug"
+      "match": "#[\\w-]*",
+      "name": 'keyword.operator.unit'
+      // using a different scope for a better highlight
+      //"name": "entity.other.attribute-name.id.pug"
     }
   }
 }

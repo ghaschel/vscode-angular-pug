@@ -9,7 +9,14 @@
       },
       "end": "(\\))",
       "name": "meta.tag.other",
-      "patterns": [{
+      "patterns": [
+        {
+          "include": "#angular-directives"
+        },
+        {
+          "include": "#tag-events-attribute"
+        },
+        {
           "include": "#tag_attribute_name_paren"
         },
         {
