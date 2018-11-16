@@ -1,0 +1,17 @@
+{
+  repository: {
+    "interpolated_value": {
+      "begin": "(?<!\\\\)[#!]\\{(?=.*?\\})",
+      "end": "\\}",
+      "name": "string.interpolated.pug",
+      "patterns": [{
+          "match": "{",
+          "name": "invalid.illegal.tag.pug"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,17 @@
+{
+  repository: {
+    "blocks_and_includes": {
+			"captures": {
+				"1": {
+					"name": "storage.type.import.include.pug"
+				},
+				"4": {
+					"name": "variable.control.import.include.pug"
+				}
+			},
+			"match": "(extends|include|yield|append|prepend|block( (append|prepend))?)\\s+(.*)$",
+			"name": "meta.first-class.pug",
+			"comment": "Template blocks and includes."
+		}
+  }
+}

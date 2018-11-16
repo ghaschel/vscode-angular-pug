@@ -1,0 +1,19 @@
+{
+  repository: {
+    "embedded_html": {
+      "begin": "(?=<[^>]*>)",
+      "end": "$|(?=>)",
+      "name": "html",
+      "patterns": [{
+          "include": "text.html.basic"
+        },
+        {
+          "include": "#interpolated_value"
+        },
+        {
+          "include": "#interpolated_error"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  repository: {
+    "babel_parens": {
+      "begin": "\\(",
+      "end": "\\)|(({\\s*)?$)",
+      "patterns": [{
+          "include": "#babel_parens"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  }
+}

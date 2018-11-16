@@ -1,0 +1,22 @@
+{
+  repository: {
+    "tag_mixin_attributes": {
+      "begin": "(&attributes\\()",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.pug"
+        }
+      },
+      "end": "(\\))",
+      "name": "meta.tag.other",
+      "patterns": [{
+          "match": "attributes(?=\\))",
+          "name": "storage.type.keyword.pug"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  }
+}

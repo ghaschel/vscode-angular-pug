@@ -1,0 +1,21 @@
+{
+  repository: {
+    "printed_expression": {
+      "begin": "(!?\\=)\\s*",
+      "captures": {
+        "1": {
+          "name": "constant"
+        }
+      },
+      "end": "(?=\\])|$",
+      "name": "source.js",
+      "patterns": [{
+          "include": "#js_brackets"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  }
+}

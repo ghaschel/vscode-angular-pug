@@ -1,0 +1,45 @@
+{
+  repository: {
+    "mixin_call": {
+			"begin": "((?:mixin\\s+)|\\+)([\\w-]+)",
+			"beginCaptures": {
+				"1": {
+					"name": "storage.type.function.pug"
+				},
+				"2": {
+					"name": "meta.tag.other entity.name.function.pug"
+				}
+			},
+			"end": "(?!\\()|$",
+			"patterns": [
+				{
+					"begin": "(?<!\\))\\(",
+					"end": "\\)",
+					"name": "args.mixin.pug",
+					"patterns": [
+						{
+							"include": "#js_parens"
+						},
+						{
+							"include": "#string"
+						},
+						{
+							"match": "([^\\s(),=/]+)\\s*=\\s*",
+							"captures": {
+								"1": {
+									"name": "meta.tag.other entity.other.attribute-name.tag.pug"
+								}
+							}
+						},
+						{
+							"include": "source.js"
+						}
+					]
+				},
+				{
+					"include": "#tag_attributes"
+				}
+			]
+		}
+  }
+}
