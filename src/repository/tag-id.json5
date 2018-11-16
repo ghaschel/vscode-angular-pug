@@ -1,0 +1,8 @@
+{
+  repository: {
+    "tag_id": {
+      "match": "#[\\w-]+",
+      "name": "entity.other.attribute-name.id.pug"
+    }
+  }
+}

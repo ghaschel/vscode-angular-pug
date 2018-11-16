@@ -1,0 +1,16 @@
+{
+  repository: {
+    "tag_attribute_name_paren": {
+      "begin": "\\(\\s*",
+      "end": "\\)",
+      "name": "entity.other.attribute-name.tag.pug",
+      "patterns": [{
+          "include": "#tag_attribute_name_paren"
+        },
+        {
+          "include": "#tag_attribute_name"
+        }
+      ]
+    }
+  }
+}

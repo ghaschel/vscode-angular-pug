@@ -1,0 +1,67 @@
+{
+  repository: {
+    "tag_attributes": {
+      "begin": "(\\(\\s*)",
+      "captures": {
+        "1": {
+          "name": "constant.name.attribute.tag.pug"
+        }
+      },
+      "end": "(\\))",
+      "name": "meta.tag.other",
+      "patterns": [{
+          "include": "#tag_attribute_name_paren"
+        },
+        {
+          "include": "#tag_attribute_name"
+        },
+        {
+          "match": "!(?!=)",
+          "name": "invalid.illegal.tag.pug"
+        },
+        {
+          "begin": "=\\s*",
+          "end": "$|(?=,|(?:\\s+[^!%&*-+~|<>:?/])|\\))",
+          "name": "attribute_value",
+          "patterns": [{
+              "include": "#string"
+            },
+            {
+              "include": "#js_parens"
+            },
+            {
+              "include": "#js_brackets"
+            },
+            {
+              "include": "#js_braces"
+            },
+            {
+              "include": "source.js"
+            }
+          ]
+        },
+        {
+          "begin": "(?<=[%&*-+~|<>:?/])\\s+",
+          "end": "$|(?=,|(?:\\s+[^!%&*-+~|<>:?/])|\\))",
+          "name": "attribute_value2",
+          "patterns": [{
+              "include": "#string"
+            },
+            {
+              "include": "#js_parens"
+            },
+            {
+              "include": "#js_brackets"
+            },
+            {
+              "include": "#js_braces"
+            },
+            {
+              "include": "source.js"
+            }
+          ]
+        }
+      ]
+    },
+  }
+}

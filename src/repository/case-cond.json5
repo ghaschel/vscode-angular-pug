@@ -1,0 +1,36 @@
+{
+  repository: {
+    "case_conds": {
+      "begin": "(default|when)((\\s+|(?=:))|$)",
+      "captures": {
+        "1": {
+          "name": "storage.type.function.pug"
+        }
+      },
+      "end": "$",
+      "name": "meta.control.flow.pug",
+      "comment": "Pug case conditionals.",
+      "patterns": [{
+          "begin": "\\G(?!:)",
+          "end": "(?=:\\s+)|$",
+          "name": "js.embedded.control.flow.pug",
+          "patterns": [{
+              "include": "#case_when_paren"
+            },
+            {
+              "include": "source.js"
+            }
+          ]
+        },
+        {
+          "begin": ":\\s+",
+          "end": "$",
+          "name": "tag.case.control.flow.pug",
+          "patterns": [{
+            "include": "#complete_tag"
+          }]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,57 @@
+{
+  repository: {
+    "complete_tag": {
+      "begin": "(?=[\\w.#])|(:\\s*)",
+      "end": "(\\.?$)|(?=:.)",
+      "patterns": [{
+          "include": "#blocks_and_includes"
+        },
+        {
+          "include": "#unbuffered_code"
+        },
+        {
+          "include": "#mixin_call"
+        },
+        {
+          "include": "#flow_control"
+        },
+        {
+          "match": "(?<=:)\\w.*$",
+          "name": "invalid.illegal.name.tag.pug"
+        },
+        {
+          "include": "#tag_name"
+        },
+        {
+          "include": "#tag_id"
+        },
+        {
+          "include": "#tag_classes"
+        },
+        {
+          "include": "#tag_attributes"
+        },
+        {
+          "include": "#tag_mixin_attributes"
+        },
+        {
+          "match": "((\\.)\\s+$)|((:)\\s*$)",
+          "captures": {
+            "2": {
+              "name": "invalid.illegal.end.tag.pug"
+            },
+            "4": {
+              "name": "invalid.illegal.end.tag.pug"
+            }
+          }
+        },
+        {
+          "include": "#printed_expression"
+        },
+        {
+          "include": "#tag_text"
+        }
+      ]
+    },
+  }
+}

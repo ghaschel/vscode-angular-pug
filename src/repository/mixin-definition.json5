@@ -1,0 +1,24 @@
+{
+  repository: {
+    "mixin_definition": {
+			"match": "(mixin\\s+)([\\w-]+)(?:(\\()\\s*((?:[a-zA-Z_]\\w*\\s*)(?:,\\s*[a-zA-Z_]\\w*\\s*)*)(\\)))?$",
+			"captures": {
+				"1": {
+					"name": "storage.type.function.pug"
+				},
+				"2": {
+					"name": "meta.tag.other entity.name.function.pug"
+				},
+				"3": {
+					"name": "punctuation.definition.parameters.begin.js"
+				},
+				"4": {
+					"name": "variable.parameter.function.js"
+				},
+				"5": {
+					"name": "punctuation.definition.parameters.begin.js"
+				}
+			}
+		}
+  }
+}

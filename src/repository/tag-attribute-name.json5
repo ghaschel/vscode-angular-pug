@@ -1,0 +1,12 @@
+{
+  repository: {
+    "tag_attribute_name": {
+      "match": "([^\\s(),=/!]+)\\s*",
+      "captures": {
+        "1": {
+          "name": "entity.other.attribute-name.tag.pug"
+        }
+      }
+    }
+  }
+}

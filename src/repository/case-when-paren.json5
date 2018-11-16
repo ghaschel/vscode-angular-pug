@@ -1,0 +1,20 @@
+{
+  repository: {
+    "case_when_paren": {
+      "begin": "\\(",
+      "end": "\\)",
+      "name": "js.when.control.flow.pug",
+      "patterns": [{
+          "include": "#case_when_paren"
+        },
+        {
+          "match": ":",
+          "name": "invalid.illegal.name.tag.pug"
+        },
+        {
+          "include": "source.js"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  repository: {
+    "inline_pug": {
+      "begin": "(?<!\\\\)(#\\[)",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.pug"
+        },
+        "2": {
+          "name": "entity.name.function.pug"
+        }
+      },
+      "end": "(\\])",
+      "name": "inline.pug",
+      "patterns": [{
+          "include": "#inline_pug"
+        },
+        {
+          "include": "#mixin_call"
+        },
+        {
+          "begin": "(?<!\\])(?=[\\w.#])|(:\\s*)",
+          "end": "(?=\\]|(:.)|=|\\s)",
+          "name": "tag.inline.pug",
+          "patterns": [{
+              "include": "#tag_name"
+            },
+            {
+              "include": "#tag_id"
+            },
+            {
+              "include": "#tag_classes"
+            },
+            {
+              "include": "#tag_attributes"
+            },
+            {
+              "include": "#tag_mixin_attributes"
+            },
+            {
+              "include": "#inline_pug"
+            },
+            {
+              "match": "\\[",
+              "name": "invalid.illegal.tag.pug"
+            }
+          ]
+        },
+        {
+          "include": "#unbuffered_code"
+        },
+        {
+          "include": "#printed_expression"
+        },
+        {
+          "match": "\\[",
+          "name": "invalid.illegal.tag.pug"
+        },
+        {
+          "include": "#inline_pug_text"
+        }
+      ]
+    }
+  }
+}
