@@ -81,7 +81,7 @@ This plugin adds syntax highlighting for angular Pug template files in VS Code. 
 
 <span name="script-tags"></span>
 
-<img src="https://raw.githubusercontent.com/ghaschel/vscode-angular-pu/master/assets/script-tag.png" title="Script tags" alt="Script tag" />
+<img src="https://raw.githubusercontent.com/ghaschel/vscode-angular-pug/master/assets/script-tag.png" title="Script tags" alt="Script tag" />
 
 ### Generic attributes
 

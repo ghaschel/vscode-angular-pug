@@ -1,45 +1,49 @@
 {
   "name": "vscode-angular-pug",
-  "version": "0.0.1",
+  "displayName": "vscode-angular-pug",
   "description": "Angular syntax highlighting for pug template files",
-  "main": "gulpfile.js",
-  "scripts": {
-    "start": "gulp watch"
-  },
+  "version": "0.0.2",
+  "publisher": "ghaschel",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ghaschel/vscode-angular-pug.git"
   },
-  "categories": [
-    "Programming Languages"
-  ],
-  "engines": {
-    "vscode": "^1.20.0"
-  },
-  "author": "Guilherme Haschel",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/ghaschel/vscode-angular-pug/issues"
   },
-  "homepage": "https://github.com/ghaschel/vscode-angular-pug#readme",
-  "contributes": {
-    "languages": [{
-      "id": "jade",
-      "aliases": [
-        "Pug (Angular template)"
-      ],
-      "extensions": [
-        ".component.pug",
-        ".component.jade"
-      ],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "html",
-      "scopeName": "text.pug",
-      "path": "./syntaxes/angular-pug.tmLanguage.json"
-    }]
+  "scripts": {
+    "start": "gulp watch"
   },
+  "engines": {
+    "vscode": "^1.20.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jade",
+        "aliases": [
+          "Pug (Angular template)"
+        ],
+        "extensions": [
+          ".component.pug"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jade",
+        "scopeName": "text.pug",
+        "path": "./syntaxes/angular-pug.tmLanguage.json"
+      }
+    ]
+  },
+  "author": "Guilherme Haschel",
+  "homepage": "https://github.com/ghaschel/vscode-angular-pug#readme",
   "galleryBanner": {
     "color": "#1e1e1e",
     "theme": "dark"
@@ -52,5 +56,10 @@
     "json-beautify": "^1.0.1",
     "lodash": "^4.17.11",
     "save-file": "^1.2.1"
+  },
+  "__metadata": {
+    "id": "9bd7fabe-8030-4cc2-84c0-61ffea1b86d3",
+    "publisherId": "11dc737a-af20-4f74-a460-baf39922c066",
+    "publisherDisplayName": "Guilherme Haschel"
   }
 }
