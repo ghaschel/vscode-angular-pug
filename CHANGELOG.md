@@ -1,6 +1,13 @@
 # Change Log
 
-# 0.0.2 (16/11/2018) - First release
+# 0.1.6 (28/12/2018)
+
+- Changed scope names
+- Added a custom pattern for angular expression matching
+- Improved html entities pattern match
+- Improved highlighting for class pattern matching
+
+# 0.0.2 (_16/11/2018_) - First release
 
 - Support for angular interpolations
 - Support for angular directives

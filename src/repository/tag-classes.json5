@@ -7,7 +7,8 @@
           "name": "invalid.illegal.tag.pug"
         }
       },
-      "name": "entity.other.attribute-name.class.pug"
+      "name": "support.type.object.module.html"
+      //"name": "entity.other.attribute-name.class.pug"
     }
   }
 }

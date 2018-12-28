@@ -10,7 +10,7 @@
         },
         '5': {
           // using another scope different from the one it fits to differentiate in color from objects and variables
-          name: 'support.type.object.module.html' 
+          name: 'constant.numeric.angular-directive'
         },
         '6': {
           name: 'constant.character.entity.html'
@@ -32,7 +32,7 @@
         {
           beginCaptures: {
             '0': {
-              name: 'punctuation.definition.string.begin.html'
+              name: 'string.quoted.double.html'
             }
           },
           patterns: [
@@ -42,7 +42,7 @@
             },
             {
               match: '\\blet\\b\\s',
-              name: 'keyword.operator.let'
+              name: 'keyword.operator.expression.let.js'
             },
             {
               include: 'source.js#expression'
@@ -51,7 +51,7 @@
           begin: '"',
           endCaptures: {
             '0': {
-              name: 'punctuation.definition.string.end.html'
+              name: 'string.quoted.double.html'
             }
           },
           end: '"',
@@ -60,29 +60,29 @@
         {
           beginCaptures: {
             '0': {
-              name: 'punctuation.definition.string.begin.html'
+              name: 'string.quoted.single.html'
             }
           },
           patterns: [
             {
-              match: '\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!',
+              match: '\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:',
               name: 'keyword.operator.punctuation'
             },
             {
               match: '\\blet\\b\\s',
-              name: 'keyword.operator.let'
+              name: 'keyword.operator.expression.let.js'
             },
             {
               include: 'source.js#expression'
             }
           ],
-          begin: "'",
+          begin: '\'',
           endCaptures: {
             '0': {
-              name: 'punctuation.definition.string.end.html'
+              name: 'string.quoted.single.html'
             }
           },
-          end: "'",
+          end: '\'',
           name: 'source.directive.angular'
         }
       ]
