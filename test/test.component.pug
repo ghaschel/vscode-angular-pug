@@ -4,83 +4,35 @@ doctype html
 | COMMENTS
 // COMMENTS
 
-| INVALID ATTRIBUTES
-a(charset='', coords='', rev='', shape='')
-area(nohref='')
-body(alink='', background='', bgcolor='', link='', vlink='')
-br(clear='')
-dl(compact='')
-menu(compact='')
-title Teste
-hr(align='', noshade='', size='', width='')
-html(version='')
-iframe(align='', frameborder='', longdesc='', marginheight='', marginwidth='', scrolling='')
-img(align='', hspace='', longdesc='', name='', vspace='')
-li(type='')
-link(charset='', rev='', target='')
-div(align='')
-h1(align='')
-h2(align='')
-h3(align='')
-h4(align='')
-h5(align='')
-h6(align='')
-input(align='')
-legend(align='')
-p(align='')
-ol(compact='', type='')
-ul(compact='teste', type='')
-object(archive='', border='', classid='', codebase='', codetype='', declare='', hspace='', standby='', vspace='',
-align='')
-param(type='', valuetype='')
-pre(width='').
-t(abbr='', axis='')
-table(bgcolor='', border='', cellpadding='', cellspacing='', frame='', rules='', scheme='', width='')
-
 | ANGULAR DIRECTIVES
 div#testing.testing-class(
-  [binding]='to.element',
-  [(binding)]='to.element',
+  [binding]="to.element",
+  [(binding)]="to.element",
   [attr.href]='file?.link',
   [style.font-size.px]='10',
   [@$visibility]='module.$visibility',
   [@visibility]='getMenuState()',
   (click)='callback(parameter.test)',
   *ngif='condition.met',
-  [test]='test.test();',
-  *ngfor='let a of b; index as c;',
+  [test]="test.test();",
+  *ngfor="let a of b; index as c;",
   #templatevariable=''
 )
+
 
 | ANGULAR INTERPOLATIONS
 | {{angular.interpolations || test}}
 | {{angular?.interpolations}}
 | {{angular!.interpolations}}
 
+|<div class="" *ngIf=""></div>
+ 
 | ENTITIES
 | &nbsp;
 | &#0098;
 
 | REGEX
 | /[^@\/#(){31231231}]/
-
-| DEPRECATED TAGS
-acronym
-applet
-basefont
-big
-center
-dir
-font
-isindex.class
-noframes
-s
-strike.test teste testestestestes
-tt
-u
-  | the single quote won't bother anymore
-  | neither will the double one "
-
 
 | DOM EVENTS
 div(DOMMenuItemActive='callback()',

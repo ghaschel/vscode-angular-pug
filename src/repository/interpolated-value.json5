@@ -9,7 +9,7 @@
           "name": "invalid.illegal.tag.pug"
         },
         {
-          "include": "source.js"
+          "include": "#angular-expressions"
         }
       ]
     }
