@@ -4,7 +4,7 @@
       captures: {
         '1': {
           // using another scope different from the one it fits to differentiate in color from objects and variables
-          name: 'support.type.object.module.html' 
+          name: 'support.type.object.module.html'
         },
         '2': {
           name: 'constant.character.entity.html'
@@ -18,7 +18,7 @@
           beginCaptures: {
             '0': { name: 'punctuation.definition.string.begin.html' }
           },
-          patterns: [{ include: 'source.js#expression' }],
+          patterns: [{ include: '#angular-expression' }],
           begin: '"',
           endCaptures: {
             '0': { name: 'punctuation.definition.string.end.html' }
@@ -30,7 +30,7 @@
           beginCaptures: {
             '0': { name: 'punctuation.definition.string.begin.html' }
           },
-          patterns: [{ include: 'source.js#expression' }],
+          patterns: [{ include: '#angular-expression' }],
           begin: "'",
           endCaptures: {
             '0': { name: 'punctuation.definition.string.end.html' }

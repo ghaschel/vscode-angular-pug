@@ -45,7 +45,7 @@
               name: 'keyword.operator.expression.let.js'
             },
             {
-              include: 'source.js#expression'
+              include: '#angular-expression'
             }
           ],
           begin: '"',
@@ -73,16 +73,16 @@
               name: 'keyword.operator.expression.let.js'
             },
             {
-              include: 'source.js#expression'
+              include: '#angular-expression'
             }
           ],
-          begin: '\'',
+          begin: "'",
           endCaptures: {
             '0': {
               name: 'string.quoted.single.html'
             }
           },
-          end: '\'',
+          end: "'",
           name: 'source.directive.angular'
         }
       ]
