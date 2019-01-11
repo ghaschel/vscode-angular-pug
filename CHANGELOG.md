@@ -1,5 +1,10 @@
 # Change Log
 
+# 0.1.7 (11/01/2019)
+
+- Fixed an issue with optional acessor `(?.)`
+- Fixed an issue with async pipe [#1](https://github.com/ghaschel/vscode-angular-pug/issues/1)
+
 # 0.1.6 (28/12/2018)
 
 - Changed scope names

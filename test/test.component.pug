@@ -11,11 +11,13 @@ div#testing.testing-class(
   [attr.href]='file?.link',
   [style.font-size.px]='10',
   [@$visibility]='module.$visibility',
-  [@visibility]='getMenuState()',
-  (click)='callback(parameter.test)',
+  [@visibility]='a?.test?.getMenuState()',
+  (click)='callback(parameter?.test)',
   *ngif='condition.met',
   [test]="test.test();",
   *ngfor="let a of b; index as c;",
+  [binding]="(observable[a?.test]?.test | async)?.test as test"
+  [binding]="observable[a?.test]?.test | async as test"
   #templatevariable=''
 )
 
@@ -25,8 +27,6 @@ div#testing.testing-class(
 | {{angular?.interpolations}}
 | {{angular!.interpolations}}
 
-|<div class="" *ngIf=""></div>
- 
 | ENTITIES
 | &nbsp;
 | &#0098;

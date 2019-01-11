@@ -2,7 +2,7 @@
   "name": "vscode-angular-pug",
   "displayName": "vscode-angular-pug",
   "description": "Angular syntax highlighting for pug template files",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "publisher": "ghaschel",
   "license": "MIT",
   "repository": {

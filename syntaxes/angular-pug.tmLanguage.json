@@ -963,7 +963,7 @@
                     },
                     "patterns": [
                         {
-                            "include": "source.js#expression"
+                            "include": "#angular-expression"
                         }
                     ],
                     "begin": "\"",
@@ -983,7 +983,7 @@
                     },
                     "patterns": [
                         {
-                            "include": "source.js#expression"
+                            "include": "#angular-expression"
                         }
                     ],
                     "begin": "'",
@@ -1081,6 +1081,120 @@
                 },
                 {
                     "include": "source.js"
+                }
+            ]
+        },
+        "angular-directives": {
+            "captures": {
+                "3": {
+                    "name": "string.regexp"
+                },
+                "4": {
+                    "name": "constant.character.entity.html"
+                },
+                "5": {
+                    "name": "constant.numeric.angular-directive"
+                },
+                "6": {
+                    "name": "constant.character.entity.html"
+                },
+                "7": {
+                    "name": "keyword.operator.unit"
+                },
+                "8": {
+                    "name": "string.regexp"
+                },
+                "9": {
+                    "name": "constant.character.entity.html"
+                }
+            },
+            "begin": "((?:\\b(v-)|(\\*|\\#|[\\[\\(]{1,2}))(@)?([a-zA-Z0-9\\-\\$]+)(?:[\\:\\.]([a-zA-Z0-9\\-\\%]+))?(?:\\.([a-zA-Z0-9\\-\\%]+))*)([\\]\\)]{1,2})?\\s*(=)?",
+            "end": "(?<='|\")|(?=[\\s<>`])",
+            "name": "meta.directive.angular",
+            "patterns": [
+                {
+                    "beginCaptures": {
+                        "0": {
+                            "name": "string.quoted.double.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "match": "\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:",
+                            "name": "keyword.operator.punctuation"
+                        },
+                        {
+                            "match": "\\blet\\b\\s",
+                            "name": "keyword.operator.expression.let.js"
+                        },
+                        {
+                            "include": "#angular-expression"
+                        }
+                    ],
+                    "begin": "\"",
+                    "endCaptures": {
+                        "0": {
+                            "name": "string.quoted.double.html"
+                        }
+                    },
+                    "end": "\"",
+                    "name": "source.directive.angular"
+                },
+                {
+                    "beginCaptures": {
+                        "0": {
+                            "name": "string.quoted.single.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "match": "\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:",
+                            "name": "keyword.operator.punctuation"
+                        },
+                        {
+                            "match": "\\blet\\b\\s",
+                            "name": "keyword.operator.expression.let.js"
+                        },
+                        {
+                            "include": "#angular-expression"
+                        }
+                    ],
+                    "begin": "'",
+                    "endCaptures": {
+                        "0": {
+                            "name": "string.quoted.single.html"
+                        }
+                    },
+                    "end": "'",
+                    "name": "source.directive.angular"
+                }
+            ]
+        },
+        "angular-interpolations": {
+            "patterns": [
+                {
+                    "beginCaptures": {
+                        "0": {
+                            "name": "string.regexp.angular-interpolation.begin"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "match": "\\?\\.|\\!\\.|\\.|\\!|\\?|\\:|\\;|\\,",
+                            "name": "keyword.operator.navigation"
+                        },
+                        {
+                            "include": "#angular-expression"
+                        }
+                    ],
+                    "begin": "\\{\\{\\{?",
+                    "endCaptures": {
+                        "0": {
+                            "name": "string.regexp.angular-interpolation.end"
+                        }
+                    },
+                    "end": "\\}\\}\\}?",
+                    "name": "expression.embedded.angular"
                 }
             ]
         },
@@ -1611,7 +1725,7 @@
                             "name": "entity.name.function.ts"
                         },
                         "5": {
-                            "name": "keyword.operator.optional.ts"
+                            "name": "keyword.operator.ts"
                         }
                     }
                 },
@@ -1631,7 +1745,7 @@
                             "name": "variable.parameter.ts"
                         },
                         "5": {
-                            "name": "keyword.operator.optional.ts"
+                            "name": "keyword.operator.ts"
                         }
                     }
                 }
@@ -1661,7 +1775,7 @@
         },
         "punctuation-accessor": {
             "name": "punctuation.accessor.ts",
-            "match": "\\?\\.|\\!\\.|\\."
+            "match": "(\\?\\.)|(\\!\\.)|(\\.)"
         },
         "punctuation-comma": {
             "name": "punctuation.separator.comma.ts",
@@ -2090,120 +2204,6 @@
             "patterns": [
                 {
                     "include": "#angular-expression"
-                }
-            ]
-        },
-        "angular-directives": {
-            "captures": {
-                "3": {
-                    "name": "string.regexp"
-                },
-                "4": {
-                    "name": "constant.character.entity.html"
-                },
-                "5": {
-                    "name": "constant.numeric.angular-directive"
-                },
-                "6": {
-                    "name": "constant.character.entity.html"
-                },
-                "7": {
-                    "name": "keyword.operator.unit"
-                },
-                "8": {
-                    "name": "string.regexp"
-                },
-                "9": {
-                    "name": "constant.character.entity.html"
-                }
-            },
-            "begin": "((?:\\b(v-)|(\\*|\\#|[\\[\\(]{1,2}))(@)?([a-zA-Z0-9\\-\\$]+)(?:[\\:\\.]([a-zA-Z0-9\\-\\%]+))?(?:\\.([a-zA-Z0-9\\-\\%]+))*)([\\]\\)]{1,2})?\\s*(=)?",
-            "end": "(?<='|\")|(?=[\\s<>`])",
-            "name": "meta.directive.angular",
-            "patterns": [
-                {
-                    "beginCaptures": {
-                        "0": {
-                            "name": "string.quoted.double.html"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "match": "\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:",
-                            "name": "keyword.operator.punctuation"
-                        },
-                        {
-                            "match": "\\blet\\b\\s",
-                            "name": "keyword.operator.expression.let.js"
-                        },
-                        {
-                            "include": "source.js#expression"
-                        }
-                    ],
-                    "begin": "\"",
-                    "endCaptures": {
-                        "0": {
-                            "name": "string.quoted.double.html"
-                        }
-                    },
-                    "end": "\"",
-                    "name": "source.directive.angular"
-                },
-                {
-                    "beginCaptures": {
-                        "0": {
-                            "name": "string.quoted.single.html"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "match": "\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:",
-                            "name": "keyword.operator.punctuation"
-                        },
-                        {
-                            "match": "\\blet\\b\\s",
-                            "name": "keyword.operator.expression.let.js"
-                        },
-                        {
-                            "include": "source.js#expression"
-                        }
-                    ],
-                    "begin": "'",
-                    "endCaptures": {
-                        "0": {
-                            "name": "string.quoted.single.html"
-                        }
-                    },
-                    "end": "'",
-                    "name": "source.directive.angular"
-                }
-            ]
-        },
-        "angular-interpolations": {
-            "patterns": [
-                {
-                    "beginCaptures": {
-                        "0": {
-                            "name": "string.regexp.angular-interpolation.begin"
-                        }
-                    },
-                    "patterns": [
-                        {
-                            "match": "\\?\\.|\\!\\.|\\.|\\!|\\?|\\:|\\;|\\,",
-                            "name": "keyword.operator.navigation"
-                        },
-                        {
-                            "include": "#angular-expression"
-                        }
-                    ],
-                    "begin": "\\{\\{\\{?",
-                    "endCaptures": {
-                        "0": {
-                            "name": "string.regexp.angular-interpolation.end"
-                        }
-                    },
-                    "end": "\\}\\}\\}?",
-                    "name": "expression.embedded.angular"
                 }
             ]
         }
