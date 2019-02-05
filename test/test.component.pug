@@ -16,6 +16,7 @@ div#testing.testing-class(
   *ngif='condition.met',
   [test]="test.test();",
   *ngfor="let a of b; index as c;",
+  *ngTemplateOutlet="TEST; context: { key: value.func(), string: 'string' }"
   [binding]="(observable[a?.test]?.test | async)?.test as test"
   [binding]="observable[a?.test]?.test | async as test"
   #templatevariable=''
