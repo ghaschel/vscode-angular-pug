@@ -1,5 +1,8 @@
 # Change Log
 
+# 0.2.8 (24/05/2019)
+- Fixed an issue with angular attributes with underlines
+
 # 0.2.7 (05/02/2019)
 - Added highlighting for uppercase characters inside attributes (they were white)
 
