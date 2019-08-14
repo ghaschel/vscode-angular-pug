@@ -7,6 +7,7 @@ doctype html
 | ANGULAR DIRECTIVES
 div#testing.testing-class(
   [binding]="to.element",
+  mat-header-cell *matHeaderCellDef class="test"
   [binding_with_underline]="to.function_with_underline()",
   [(binding)]="to.element",
   [attr.href]='file?.link',
