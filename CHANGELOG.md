@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.2.10 (15/08/2019)
+
+- Fixed an issue with & in plaintext being showed as invalid
+
 # 0.2.9 (14/08/2019)
 
 - Fixed an issue with multiple directives/attributes at the sime line.
