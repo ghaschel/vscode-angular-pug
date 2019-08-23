@@ -1,5 +1,9 @@
 # Change Log
 
+# 0.2.11 (23/08/2019)
+
+- Fixed `then` and `else` not being highlighted inside `*ngIf` directives
+
 # 0.2.10 (15/08/2019)
 
 - Fixed an issue with & in plaintext being showed as invalid

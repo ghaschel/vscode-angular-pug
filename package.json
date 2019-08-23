@@ -2,7 +2,7 @@
   "name": "vscode-angular-pug",
   "displayName": "vscode-angular-pug",
   "description": "Angular syntax highlighting for pug template files",
-  "version": "0.2.10",
+  "version": "0.2.11",
   "publisher": "ghaschel",
   "license": "MIT",
   "repository": {
@@ -13,8 +13,8 @@
     "url": "https://github.com/ghaschel/vscode-angular-pug/issues"
   },
   "scripts": {
-    "watch": "gulp watch",
-    "compile-json": "gulp compile-json"
+    "watch": "npx gulp watch",
+    "compile-json": "npx gulp compile-json"
   },
   "engines": {
     "vscode": "^1.20.0"

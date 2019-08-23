@@ -15,7 +15,7 @@ div#testing.testing-class(
   [@$visibility]='module.$visibility',
   [@visibility]='a?.test?.getMenuState()',
   (click)='callback(parameter?.test)',
-  *ngif='condition.met',
+  *ngif='condition.met; else test; then test2',
   [test]="test.test();",
   *ngfor="let a of b; index as c;",
   *ngTemplateOutlet="TEST; context: { key: value.func(), string: 'string' }"
