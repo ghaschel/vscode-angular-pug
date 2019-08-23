@@ -871,6 +871,9 @@
                     "include": "#angular-directives"
                 },
                 {
+                    "include": "#tag-minified-boolean-attributes"
+                },
+                {
                     "include": "#tag-events-attribute"
                 },
                 {
@@ -996,6 +999,18 @@
         "tag_id": {
             "match": "#[\\w-]*",
             "name": "keyword.operator.unit"
+        },
+        "tag-minified-boolean-attributes": {
+            "captures": {
+                "1": {
+                    "name": "string.regexp"
+                },
+                "2": {
+                    "name": "support.type.object.html-attribute"
+                }
+            },
+            "match": "(?<!<|\\/)(\\*)+|\\s(\\b[\\w\\-\\:]+)\\b\\s?(?!=)",
+            "name": "punctuation.definition.tag.end.html"
         },
         "tag_mixin_attributes": {
             "begin": "(&attributes\\()",
@@ -1273,6 +1288,17 @@
         },
         "expression-operators": {
             "patterns": [
+                {
+                    "match": "((?<!\\|)(\\|)(?!\\|))\\s?([a-zA-Z0-9\\-\\_]*)",
+                    "captures": {
+                        "2": {
+                            "name": "keyword.operator.logical.ts"
+                        },
+                        "3": {
+                            "name": "entity.name.function.pipe.ng"
+                        }
+                    }
+                },
                 {
                     "name": "keyword.control.flow.ts",
                     "match": "(?<!\\.|\\$)\\b(await)\\b(?!\\$)"

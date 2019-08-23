@@ -14,6 +14,9 @@
           "include": "#angular-directives"
         },
         {
+          "include": "#tag-minified-boolean-attributes"
+        },
+        {
           "include": "#tag-events-attribute"
         },
         {
