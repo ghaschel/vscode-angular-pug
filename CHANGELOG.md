@@ -1,5 +1,10 @@
 # Change Log
 
+# 0.3.0 (23/08/2019)
+
+- Added support for attributes without equals
+- Fixed case of single asterisk being not highlighted
+
 # 0.2.11 (23/08/2019)
 
 - Fixed `then` and `else` not being highlighted inside `*ngIf` directives
