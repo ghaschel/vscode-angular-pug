@@ -1,0 +1,56 @@
+a.pug
+section.section-auth
+  .sign-up-container
+    h1
+     {{ "Content Snare" }}
+
+    //- left column
+    .sign-up-row 
+      .sign-up-col.left
+        h2
+          {{ "Content Snare" | translate }}
+        h3
+          {{ "Get Content From Your Clients On Time" | translate: null:"":"Heading" }}
+
+        cs-testimonial-slider <s>
+
+        p.login
+          span.
+            {{ "Already a member?" | translate: null:"":"Subheading" }}
+            &nbsp;
+          a(routerLink='/auth/sign-in')
+           {{ "Log in to your account" | translate: null:"":"Anchor" }}
+
+      //- right column
+      .sign-up-col.right(role='main')
+        .alert(
+          *ngIf='serverResponse',
+          role='alert',
+          [innerHtml]=`
+            serverResponse === ServerResponse.genericError 
+              ? ("<p><strong>Oh no... something went skew-whiff :(</strong></p><p>Please try again later or contact our support team by pressing the <i>cant access your account?</i> link on the sign in button</p></div>" | translate)
+              : ("<p><strong>We can't access your Internet :(</strong></p><p>Please ensure you are connected and try again.</p>" | translate)`
+        )
+
+        //- signup pages
+        ng-container([ngSwitch]='step')
+          cs-sign-up-details(
+            *ngSwitchCase='SignUpSteps.signUpInfo',
+            [form]='signUpForm',
+            (next)='onStep(SignUpSteps.personalInfo)'
+          )
+          cs-personal-details(
+            *ngSwitchCase='SignUpSteps.personalInfo',
+            [form]='signUpForm',
+            (next)='onStep(SignUpSteps.companyInfo)'
+          )
+          cs-new-company-details(
+            *ngSwitchCase='SignUpSteps.companyInfo',
+            [form]='signUpForm',
+            [isDisabled]='isDisabled',
+            (next)='onSignUpComplete()'
+          )
+
+        p.mobile-sign-up
+          span {{ "Already a member?" | translate: null:"":"Subheading" }} &nbsp;
+          a(routerLink='/auth/sign-in') {{ "Sign in to your account" | translate: null:"":"Anchor" }}

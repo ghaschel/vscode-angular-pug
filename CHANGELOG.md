@@ -1,5 +1,10 @@
 # Change Log
 
+# 0.3.1 (19/06/2020)
+
+- Fixed problems with multiline expressions with backquotes [#5](https://github.com/ghaschel/vscode-angular-pug/issues/5)
+- Fixed problem with angular attributes without following equal [#5](https://github.com/ghaschel/vscode-angular-pug/issues/5)
+
 # 0.3.0 (23/08/2019)
 
 - Added support for attributes without equals

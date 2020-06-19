@@ -4,6 +4,9 @@
     "scopeName": "text.pug",
     "patterns": [
         {
+            "include": "#angular-interpolations"
+        },
+        {
             "captures": {
                 "1": {
                     "name": "keyword.operator.exclamation"
@@ -951,7 +954,7 @@
                 }
             },
             "begin": "(DOMMenuItemActive|DOMMenuItemInactive|DOMMouseScroll|onabort|onafterprint|onafterupdate|onbeforecopy|onbeforecut|onbeforeeditfocus|onbeforepaste|onbeforeprint|onbeforeunload|onbeforeupdate|onblur|onbounce|onbroadcast|oncanplay|oncanplaythrough|oncellchange|onchange|onclick|onclose|oncommand|oncommandupdate|oncontextmenu|oncopy|oncut|ondataavailable|ondatasetchanged|ondatasetcomplete|ondblclick|ondrag|ondragdrop|ondragend|ondragenter|ondragexit|ondraggesture|ondragleave|ondragover|ondragstart|ondrop|ondurationchange|onemptied|onended|onerror|onerrorupdate|onfilterchange|onfinish|onfocus|onformchange|onforminput|ongotpointercapture|onhelp|oninput|oninvalid|onkeydown|onkeypress|onkeyup|onload|onloadeddata|onloadedmetadata|onloadstart|onlosecapture|onlostpointercapture|onmousedown|onmousemove|onmouseout|onmouseover|onmouseup|onmousewheel|onoverflow|onoverflowchanged|onpaste|onpause|onplay|onplaying|onpointercancel|onpointerdown|onpointerenter|onpointerleave|onpointermove|onpointerout|onpointerover|onpointerup|onpopuphidden|onpopuphiding|onpopupshowing|onpopupshown|onprogress|onpropertychange|onratechange|onreadystatechange|onreset|onresize|onrowenter|onrowexit|onrowinserted|onrowsdelete|onscroll|onseeked|onseeking|onselect|onselectstart|onshow|onstalled|onstart|onstop|onsubmit|onsuspend|ontimeupdate|onunderflow|onunload|onvolumechange|onwaiting|style)+(=)",
-            "end": "(?<='|\")|(?=[\\s<>`])",
+            "end": "(?<='|\"|`)|(?=[\\s<>])",
             "name": "meta.attribute-with-value.events.html",
             "patterns": [
                 {
@@ -972,6 +975,26 @@
                         }
                     },
                     "end": "\"",
+                    "name": "source.events.html"
+                },
+                {
+                    "beginCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.begin.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "include": "#angular-expression"
+                        }
+                    ],
+                    "begin": "`",
+                    "endCaptures": {
+                        "0": {
+                            "name": "punctuation.definition.string.end.html"
+                        }
+                    },
+                    "end": "`",
                     "name": "source.events.html"
                 },
                 {
@@ -1033,7 +1056,7 @@
         },
         "tag_name": {
             "begin": "([#!]\\{(?=.*?\\}))|(\\w(([\\w:-]+[\\w-])|([\\w-]*)))",
-            "end": "(\\G(?<!\\5[^\\w-]))|\\}|$",
+            "end": "(\\G(?<!\\5[^\\w-]))|\\}|$|\\s",
             "name": "meta.tag.other entity.name.tag.pug",
             "patterns": [
                 {
@@ -1119,8 +1142,8 @@
                     "name": "constant.character.entity.html"
                 }
             },
-            "begin": "((?:\\b(v-)|(\\*|\\#|[\\[\\(]{1,2}))(@)?([a-zA-Z0-9\\-_\\$]+)(?:[\\:\\.]([a-zA-Z0-9\\-_\\%]+))?(?:\\.([a-zA-Z0-9\\-_\\%]+))*)([\\]\\)]{1,2})?(=)?",
-            "end": "(?<='|\")|(?=[\\s<>`])",
+            "begin": "((?:\\b(v-)|(\\*|\\#|[\\[\\(]{1,2}))(@)?([a-zA-Z0-9\\-_\\$]+)(?:[\\:\\.]([a-zA-Z0-9\\-_\\%]+))?(?:\\.([a-zA-Z0-9\\-_\\%]+))*)([\\]\\)]{1,2})?(?!\\s)(=)?",
+            "end": "(?<='|\"|`)|(?=[\\s<>\\)])",
             "name": "meta.directive.angular",
             "patterns": [
                 {
@@ -1178,6 +1201,34 @@
                     },
                     "end": "'",
                     "name": "source.directive.angular"
+                },
+                {
+                    "beginCaptures": {
+                        "0": {
+                            "name": "string.quoted.backquote.html"
+                        }
+                    },
+                    "patterns": [
+                        {
+                            "match": "\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:",
+                            "name": "keyword.operator.punctuation"
+                        },
+                        {
+                            "match": "\\blet\\b\\s",
+                            "name": "keyword.operator.expression.let.js"
+                        },
+                        {
+                            "include": "#angular-expression"
+                        }
+                    ],
+                    "begin": "`",
+                    "endCaptures": {
+                        "0": {
+                            "name": "string.quoted.backquote.html"
+                        }
+                    },
+                    "end": "`",
+                    "name": "source.directive.angular"
                 }
             ]
         },
@@ -1198,13 +1249,13 @@
                             "include": "#angular-expression"
                         }
                     ],
-                    "begin": "\\{\\{\\{?",
+                    "begin": "\\s*\\{\\{",
                     "endCaptures": {
                         "0": {
                             "name": "string.regexp.angular-interpolation.end"
                         }
                     },
-                    "end": "\\}\\}\\}?",
+                    "end": "\\}\\}",
                     "name": "expression.embedded.angular"
                 }
             ]

@@ -1,0 +1,33 @@
+cs-toolbar(
+  [hasSaveButtons]='false',
+  [displayPageTitle]='false',
+  [actionItems]='ACTION_OPTIONS',
+  [hideActionItems]='true',
+  (dropDownOpen)='onDropDownOpen($event)',
+  (action)='onSetStep($event)'
+)
+  div(return)
+    button.cs-button.return(*ngIf='previousStep === RequestWizardStep.home', routerLink='/').
+      {{ previousStepText || '' | translate }}
+    button.cs-button.return(
+      *ngIf='!customReturn && previousStep !== RequestWizardStep.home',
+      (click)='onSetStep(previousStep)'
+    ) {{ previousStepText || "" | translate }}
+    ng-content(*ngIf='customReturn')
+
+  nav.wrapper(middle, #wizardContainer)
+    .selected(*ngIf='!isWizardVisible')
+      {{ currentStepText || "" | translate }}
+
+    ul(*ngIf='isWizardVisible', role='listbox', aria-label='Edit request wizard steps')
+      ng-container(*ngFor='let step of ACTION_OPTIONS; trackBy: trackByFunction')
+        li(
+          *ngIf='!step.hidden',
+          role='option',
+          [ngClass]=`{
+            selected: currentStep === step.id,
+            allowed: (step.id || 0) <= maxAllowedStep
+          }`
+        )
+          span.step((click)='onSetStep(step.id)') {{ step?.text || "" | translate }}
+          span.icon.cs-icon-right

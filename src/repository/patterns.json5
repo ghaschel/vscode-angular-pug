@@ -1,5 +1,6 @@
 {
   "patterns": [
+    { include: '#angular-interpolations' },
     {
       "captures": {
         '1': {
@@ -263,7 +264,8 @@
       "begin": "^\\s*",
       "end": "$",
       "comment": "All constructs that generally span a single line starting with any number of white-spaces.",
-      "patterns": [{
+      "patterns": [
+        {
           "include": "#inline_pug"
         },
         {

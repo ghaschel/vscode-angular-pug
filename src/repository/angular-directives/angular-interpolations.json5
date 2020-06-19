@@ -17,13 +17,13 @@
               include: '#angular-expression'
             }
           ],
-          begin: '\\{\\{\\{?',
+          begin: '\\s*\\{\\{',
           endCaptures: {
             '0': {
               name: 'string.regexp.angular-interpolation.end'
             }
           },
-          end: '\\}\\}\\}?',
+          end: '\\}\\}',
           name: 'expression.embedded.angular'
         }
       ]

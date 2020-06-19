@@ -3,7 +3,8 @@
     "inline_pug_text": {
       "begin": "",
       "end": "(?=\\])",
-      "patterns": [{
+      "patterns": [
+        {
           "begin": "\\[",
           "end": "\\]",
           "patterns": [{

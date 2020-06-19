@@ -3,7 +3,7 @@
   name: 'angular-pug',
   scopeName: 'text.pug',
   patterns: [
-    
+     
   ],
   repository: {}
 }

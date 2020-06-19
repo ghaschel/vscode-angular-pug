@@ -25,8 +25,8 @@
           name: 'constant.character.entity.html'
         }
       },
-      begin: '((?:\\b(v-)|(\\*|\\#|[\\[\\(]{1,2}))(@)?([a-zA-Z0-9\\-_\\$]+)(?:[\\:\\.]([a-zA-Z0-9\\-_\\%]+))?(?:\\.([a-zA-Z0-9\\-_\\%]+))*)([\\]\\)]{1,2})?(=)?',
-      end: '(?<=\'|")|(?=[\\s<>`])',
+      begin: '((?:\\b(v-)|(\\*|\\#|[\\[\\(]{1,2}))(@)?([a-zA-Z0-9\\-_\\$]+)(?:[\\:\\.]([a-zA-Z0-9\\-_\\%]+))?(?:\\.([a-zA-Z0-9\\-_\\%]+))*)([\\]\\)]{1,2})?(?!\\s)(=)?',
+      end: '(?<=\'|"|`)|(?=[\\s<>\\)])',
       name: 'meta.directive.angular',
       patterns: [
         {
@@ -83,6 +83,34 @@
             }
           },
           end: "'",
+          name: 'source.directive.angular'
+        },
+        {
+          beginCaptures: {
+            '0': {
+              name: 'string.quoted.backquote.html'
+            }
+          },
+          patterns: [
+            {
+              match: '\\?\\.|\\!\\.|\\.|\\,|\\;|\\?|\\!|\\:',
+              name: 'keyword.operator.punctuation'
+            },
+            {
+              match: '\\blet\\b\\s',
+              name: 'keyword.operator.expression.let.js'
+            },
+            {
+              include: '#angular-expression'
+            }
+          ],
+          begin: "`",
+          endCaptures: {
+            '0': {
+              name: 'string.quoted.backquote.html'
+            }
+          },
+          end: "`",
           name: 'source.directive.angular'
         }
       ]
