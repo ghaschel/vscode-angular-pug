@@ -4,23 +4,23 @@
       begin: '\\(',
       beginCaptures: {
         '0': {
-          name: 'meta.brace.round.ts'
-        }
+          name: 'meta.brace.round.ts',
+        },
       },
       end: '\\)',
       endCaptures: {
         '0': {
-          name: 'meta.brace.round.ts'
-        }
+          name: 'meta.brace.round.ts',
+        },
       },
       patterns: [
         {
-          include: '#angular-expression'
+          include: '#angular-expression',
         },
         {
-          include: '#punctuation-comma'
-        }
-      ]
-    }
-  }
+          include: '#punctuation-comma',
+        },
+      ],
+    },
+  },
 }

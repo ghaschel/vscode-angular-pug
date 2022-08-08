@@ -1,23 +1,27 @@
 {
   repository: {
-    "flow_control": {
-      "begin": "(for|if|else if|else|each|until|while|unless|case)(\\s+|$)",
-      "captures": {
-        "1": {
-          "name": "storage.type.function.pug"
-        }
+    flow_control: {
+      begin: '(for|if|else if|else|each|until|while|unless|case)(\\s+|$)',
+      captures: {
+        '1': {
+          name: 'storage.type.function.pug',
+        },
       },
-      "end": "$",
-      "name": "meta.control.flow.pug",
-      "comment": "Pug control flow.",
-      "patterns": [{
-        "begin": "",
-        "end": "$",
-        "name": "js.embedded.control.flow.pug",
-        "patterns": [{
-          "include": "source.js"
-        }]
-      }]
-    }
-  }
+      end: '$',
+      name: 'meta.control.flow.pug',
+      comment: 'Pug control flow.',
+      patterns: [
+        {
+          begin: '',
+          end: '$',
+          name: 'js.embedded.control.flow.pug',
+          patterns: [
+            {
+              include: 'source.js',
+            },
+          ],
+        },
+      ],
+    },
+  },
 }

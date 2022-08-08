@@ -1,24 +1,25 @@
 {
   repository: {
-    "tag_text": {
-      "begin": "(?=.)",
-      "end": "$",
-      "patterns": [{
-          "include": "#inline_pug"
+    tag_text: {
+      begin: '(?=.)',
+      end: '$',
+      patterns: [
+        {
+          include: '#inline_pug',
         },
         {
-          "include": "#embedded_html"
+          include: '#embedded_html',
         },
         {
-          "include": "#html_entity"
+          include: '#html_entity',
         },
         {
-          "include": "#interpolated_value"
+          include: '#interpolated_value',
         },
         {
-          "include": "#interpolated_error"
-        }
-      ]
-    }
-  }
+          include: '#interpolated_error',
+        },
+      ],
+    },
+  },
 }

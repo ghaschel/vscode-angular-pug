@@ -3,9 +3,9 @@
     'binding-element': {
       patterns: [
         {
-          include: '#variable-initializer'
-        }
-      ]
-    }
-  }
+          include: '#variable-initializer',
+        },
+      ],
+    },
+  },
 }

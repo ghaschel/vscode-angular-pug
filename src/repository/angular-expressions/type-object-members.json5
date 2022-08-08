@@ -3,7 +3,7 @@
     'type-object-members': {
       patterns: [
         {
-          include: '#type-annotation'
+          include: '#type-annotation',
         },
         // {
         //   begin: '\\.\\.\\.',
@@ -20,12 +20,12 @@
         //   ]
         // },
         {
-          include: '#punctuation-comma'
+          include: '#punctuation-comma',
         },
         {
-          include: '#punctuation-semicolon'
-        }
-      ]
-    }
-  }
+          include: '#punctuation-semicolon',
+        },
+      ],
+    },
+  },
 }

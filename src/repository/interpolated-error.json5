@@ -1,8 +1,8 @@
 {
   repository: {
-    "interpolated_error": {
-      "match": "(?<!\\\\)[#!]\\{(?=[^}]*$)",
-      "name": "invalid.illegal.tag.pug"
-    }
-  }
+    interpolated_error: {
+      match: '(?<!\\\\)[#!]\\{(?=[^}]*$)',
+      name: 'invalid.illegal.tag.pug',
+    },
+  },
 }

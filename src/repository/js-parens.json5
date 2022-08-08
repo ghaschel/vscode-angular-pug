@@ -1,15 +1,16 @@
 {
   repository: {
-    "js_parens": {
-      "begin": "\\(",
-      "end": "\\)",
-      "patterns": [{
-          "include": "#js_parens"
+    js_parens: {
+      begin: '\\(',
+      end: '\\)',
+      patterns: [
+        {
+          include: '#js_parens',
         },
         {
-          "include": "source.js"
-        }
-      ]
-    }
-  }
+          include: 'source.js',
+        },
+      ],
+    },
+  },
 }

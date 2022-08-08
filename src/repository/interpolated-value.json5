@@ -1,17 +1,18 @@
 {
   repository: {
-    "interpolated_value": {
-      "begin": "(?<!\\\\)[#!]\\{(?=.*?\\})",
-      "end": "\\}",
-      "name": "string.interpolated.pug",
-      "patterns": [{
-          "match": "{",
-          "name": "invalid.illegal.tag.pug"
+    interpolated_value: {
+      begin: '(?<!\\\\)[#!]\\{(?=.*?\\})',
+      end: '\\}',
+      name: 'string.interpolated.pug',
+      patterns: [
+        {
+          match: '{',
+          name: 'invalid.illegal.tag.pug',
         },
         {
-          "include": "#angular-expressions"
-        }
-      ]
-    }
-  }
+          include: '#angular-expressions',
+        },
+      ],
+    },
+  },
 }

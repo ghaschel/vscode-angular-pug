@@ -4,23 +4,23 @@
       begin: '(-|(([a-zA-Z0-9_]+)\\s+=))',
       beginCaptures: {
         '3': {
-          name: 'variable.parameter.javascript.embedded.pug'
-        }
+          name: 'variable.parameter.javascript.embedded.pug',
+        },
       },
       end: '(?=\\])|(({\\s*)?$)',
       name: 'source.js',
       comment: 'name = function() {}',
       patterns: [
         {
-          include: '#js_brackets'
+          include: '#js_brackets',
         },
         {
-          include: '#babel_parens'
+          include: '#babel_parens',
         },
         {
-          include: 'source.js'
-        }
-      ]
-    }
-  }
+          include: 'source.js',
+        },
+      ],
+    },
+  },
 }

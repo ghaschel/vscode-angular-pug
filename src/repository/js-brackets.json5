@@ -1,15 +1,16 @@
 {
   repository: {
-    "js_brackets": {
-      "begin": "\\[",
-      "end": "\\]",
-      "patterns": [{
-          "include": "#js_brackets"
+    js_brackets: {
+      begin: '\\[',
+      end: '\\]',
+      patterns: [
+        {
+          include: '#js_brackets',
         },
         {
-          "include": "source.js"
-        }
-      ]
-    }
-  }
+          include: 'source.js',
+        },
+      ],
+    },
+  },
 }

@@ -1,0 +1,356 @@
+>//- SYNTAX TEST "text.pug"
+#^^^ text.pug comment.unbuffered.block.pug
+#   ^^^^^^^^^^^^^^^^^^^^^^^^ text.pug comment.unbuffered.block.pug
+>
+>cs-toolbar(
+#^^^^^^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#          ^^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>  [hasSaveButtons]='false',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                 ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                  ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                    ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.language.boolean.false.ts
+#                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                          ^^ text.pug meta.tag.other
+>  [displayPageTitle]='false',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                   ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                    ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                      ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.language.boolean.false.ts
+#                           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                            ^^ text.pug meta.tag.other
+>  [actionItems]='ACTION_OPTIONS',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#              ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#               ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                 ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.character.other
+#                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                ^^ text.pug meta.tag.other
+>  [hideActionItems]='true',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                     ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.language.boolean.true.ts
+#                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                          ^^ text.pug meta.tag.other
+>  (dropDownOpen)='onDropDownOpen($event)',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#               ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                  ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                 ^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                         ^^ text.pug meta.tag.other
+>  (action)='onSetStep($event)'
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#         ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#          ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#            ^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                      ^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+>)
+#^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>  div(return)
+#^^ text.pug
+#  ^^^ text.pug meta.tag.other entity.name.tag.pug
+#     ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#      ^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#            ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>    button.cs-button.return(*ngIf='previousStep === RequestWizardStep.home', routerLink='/').
+#^^^^ text.pug
+#    ^^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#          ^^^^^^^^^^ text.pug support.type.object.module.html
+#                    ^^^^^^^ text.pug support.type.object.module.html
+#                           ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#                            ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                             ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                                 ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                   ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                ^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.comparison.ts
+#                                                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                    ^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                                                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                                                      ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                                                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                                                           ^^ text.pug meta.tag.other
+#                                                                             ^^^^^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                                                                                       ^ text.pug meta.tag.other attribute_value
+#                                                                                        ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                                                         ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                                                          ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                                                           ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#                                                                                            ^ text.pug
+>      {{ previousStepText || '' | translate }}
+#^^^^^^^^ text.pug text.block.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#        ^ text.pug text.block.pug expression.embedded.angular
+#         ^^^^^^^^^^^^^^^^ text.pug text.block.pug expression.embedded.angular variable.other.readwrite.ts
+#                         ^ text.pug text.block.pug expression.embedded.angular
+#                          ^^ text.pug text.block.pug expression.embedded.angular keyword.operator.logical.ts
+#                            ^ text.pug text.block.pug expression.embedded.angular
+#                             ^ text.pug text.block.pug expression.embedded.angular string.quoted.single.ts punctuation.definition.string.begin.ts
+#                              ^ text.pug text.block.pug expression.embedded.angular string.quoted.single.ts punctuation.definition.string.end.ts
+#                               ^ text.pug text.block.pug expression.embedded.angular
+#                                ^ text.pug text.block.pug expression.embedded.angular keyword.operator.logical.ts
+#                                 ^ text.pug text.block.pug expression.embedded.angular
+#                                  ^^^^^^^^^ text.pug text.block.pug expression.embedded.angular entity.name.function.pipe.ng
+#                                           ^ text.pug text.block.pug expression.embedded.angular
+#                                            ^^ text.pug text.block.pug expression.embedded.angular string.regexp.angular-interpolation.end
+>    button.cs-button.return(
+#^^^^ text.pug
+#    ^^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#          ^^^^^^^^^^ text.pug support.type.object.module.html
+#                    ^^^^^^^ text.pug support.type.object.module.html
+#                           ^^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>      *ngIf='!customReturn && previousStep !== RequestWizardStep.home',
+#^^^^^^ text.pug meta.tag.other
+#      ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#       ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#           ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#              ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                           ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.logical.ts
+#                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                              ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                            ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.comparison.ts
+#                                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                               ^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                                                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                                                 ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                                                      ^^ text.pug meta.tag.other
+>      (click)='onSetStep(previousStep)'
+#^^^^^^ text.pug meta.tag.other
+#      ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#       ^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#            ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#             ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#               ^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                         ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+>    ) {{ previousStepText || "" | translate }}
+#^^^^ text.pug meta.tag.other
+#    ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug
+>    ng-content(*ngIf='customReturn')
+#^^^^ text.pug
+#    ^^^^^^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#              ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#               ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                    ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                      ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                   ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>
+>  nav.wrapper(middle, #wizardContainer)
+#^^ text.pug
+#  ^^^ text.pug meta.tag.other entity.name.tag.pug
+#     ^^^^^^^^ text.pug support.type.object.module.html
+#             ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#              ^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                    ^^ text.pug meta.tag.other
+#                      ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                       ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                                      ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>    .selected(*ngIf='!isWizardVisible')
+#^^^^ text.pug
+#    ^^^^^^^^^ text.pug support.type.object.module.html
+#             ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#              ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#               ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                      ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                      ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>      {{ currentStepText || "" | translate }}
+#^^^^^^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#        ^ text.pug expression.embedded.angular
+#         ^^^^^^^^^^^^^^^ text.pug expression.embedded.angular variable.other.readwrite.ts
+#                        ^ text.pug expression.embedded.angular
+#                         ^^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                           ^ text.pug expression.embedded.angular
+#                            ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                             ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                              ^ text.pug expression.embedded.angular
+#                               ^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                                ^ text.pug expression.embedded.angular
+#                                 ^^^^^^^^^ text.pug expression.embedded.angular entity.name.function.pipe.ng
+#                                          ^ text.pug expression.embedded.angular
+#                                           ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
+>
+>    ul(*ngIf='isWizardVisible', role='listbox', aria-label='Edit request wizard steps')
+#^^^^ text.pug
+#    ^^ text.pug meta.tag.other entity.name.tag.pug
+#      ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#       ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#        ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#            ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#              ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                              ^^ text.pug meta.tag.other
+#                                ^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                                    ^ text.pug meta.tag.other attribute_value
+#                                     ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                      ^^^^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                             ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                              ^ text.pug meta.tag.other
+#                                               ^ text.pug meta.tag.other punctuation.definition.tag.end.html
+#                                                ^^^^^ text.pug meta.tag.other punctuation.definition.tag.end.html support.type.object.html-attribute
+#                                                     ^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                                                          ^ text.pug meta.tag.other attribute_value
+#                                                           ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                                                     ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                                                      ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>      ng-container(*ngFor='let step of ACTION_OPTIONS; trackBy: trackByFunction')
+#^^^^^^ text.pug
+#      ^^^^^^^^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#                  ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#                   ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                    ^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                         ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                           ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.expression.let.js
+#                               ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                    ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.expression.of.ts
+#                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                       ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.character.other
+#                                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                       ^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                                ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                                                                ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>        li(
+#^^^^^^^^ text.pug
+#        ^^ text.pug meta.tag.other entity.name.tag.pug
+#          ^^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>          *ngIf='!step.hidden',
+#^^^^^^^^^^ text.pug meta.tag.other
+#          ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#           ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#               ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                  ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                       ^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                              ^^ text.pug meta.tag.other
+>          role='option',
+#^^^^^^^^^^ text.pug meta.tag.other
+#          ^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#              ^ text.pug meta.tag.other attribute_value
+#               ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                ^^^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                      ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                       ^^ text.pug meta.tag.other
+>          [ngClass]=`{
+#^^^^^^^^^^ text.pug meta.tag.other
+#          ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#           ^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.backquote.html
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts punctuation.definition.block.ts
+>            selected: currentStep === step.id,
+#^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts
+#            ^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                      ^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.readwrite.ts
+#                                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                  ^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts keyword.operator.comparison.ts
+#                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                      ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.object.ts
+#                                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts
+#                                           ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.property.ts
+#                                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts punctuation.separator.comma.ts
+>            allowed: (step.id || 0) <= maxAllowedStep
+#^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts
+#            ^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts
+#                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.brace.round.ts
+#                      ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.object.ts
+#                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts
+#                           ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.property.ts
+#                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                              ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts keyword.operator.logical.ts
+#                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts constant.numeric.decimal.ts
+#                                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.brace.round.ts
+#                                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                    ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts keyword.operator.relational.ts
+#                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                       ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.readwrite.ts
+>          }`
+#^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts punctuation.definition.block.ts
+#           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.backquote.html
+>        )
+#^^^^^^^^ text.pug meta.tag.other
+#        ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>          span.step((click)='onSetStep(step.id)') {{ step?.text || "" | translate }}
+#^^^^^^^^^^ text.pug
+#          ^^^^ text.pug meta.tag.other entity.name.tag.pug
+#              ^^^^^ text.pug support.type.object.module.html
+#                   ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#                    ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                     ^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                          ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                           ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                             ^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                       ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                                           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular punctuation.accessor.ts
+#                                            ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.property.ts
+#                                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                                ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug
+>          span.icon.cs-icon-right
+#^^^^^^^^^^ text.pug
+#          ^^^^ text.pug meta.tag.other entity.name.tag.pug
+#              ^^^^^ text.pug support.type.object.module.html
+#                   ^^^^^^^^^^^^^^ text.pug support.type.object.module.html
+>

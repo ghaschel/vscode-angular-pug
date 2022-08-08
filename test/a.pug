@@ -1,3 +1,5 @@
+//- SYNTAX TEST "text.pug"
+
 a.pug
 section.section-auth
   .sign-up-container
@@ -5,7 +7,7 @@ section.section-auth
      {{ "Content Snare" }}
 
     //- left column
-    .sign-up-row 
+    .sign-up-row
       .sign-up-col.left
         h2
           {{ "Content Snare" | translate }}
@@ -27,7 +29,7 @@ section.section-auth
           *ngIf='serverResponse',
           role='alert',
           [innerHtml]=`
-            serverResponse === ServerResponse.genericError 
+            serverResponse === ServerResponse.genericError
               ? ("<p><strong>Oh no... something went skew-whiff :(</strong></p><p>Please try again later or contact our support team by pressing the <i>cant access your account?</i> link on the sign in button</p></div>" | translate)
               : ("<p><strong>We can't access your Internet :(</strong></p><p>Please ensure you are connected and try again.</p>" | translate)`
         )

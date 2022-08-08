@@ -1,15 +1,16 @@
 {
   repository: {
-    "js_braces": {
-      "begin": "\\{",
-      "end": "\\}",
-      "patterns": [{
-          "include": "#js_braces"
+    js_braces: {
+      begin: '\\{',
+      end: '\\}',
+      patterns: [
+        {
+          include: '#js_braces',
         },
         {
-          "include": "source.js"
-        }
-      ]
-    }
-  }
+          include: 'source.js',
+        },
+      ],
+    },
+  },
 }

@@ -1,18 +1,18 @@
 {
   repository: {
-    "variable-initializer": {
-      "begin": "(?<!=|!)(=)(?!=)",
-      "beginCaptures": {
-        "1": {
-          "name": "keyword.operator.assignment.ts"
-        }
+    'variable-initializer': {
+      begin: '(?<!=|!)(=)(?!=)',
+      beginCaptures: {
+        '1': {
+          name: 'keyword.operator.assignment.ts',
+        },
       },
-      "end": "(?=$|[,);}\\]])",
-      "patterns": [
+      end: '(?=$|[,);}\\]])',
+      patterns: [
         {
-          "include": "#angular-expression"
-        }
-      ]
-    }
-  }
+          include: '#angular-expression',
+        },
+      ],
+    },
+  },
 }

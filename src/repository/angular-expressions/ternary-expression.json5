@@ -1,16 +1,16 @@
 {
   repository: {
-    "ternary-expression": {
-			"begin": "(?=\\?)(?!\\?\\.)",
-			"end": "(?=$|\"|[;,})\\]])",
-			"patterns": [
-				{
-					"include": "#ternary-operator"
-				},
-				{
-					"include": "#angular-expression"
-				}
-			]
-		}
-  }
+    'ternary-expression': {
+      begin: '(?=\\?)(?!\\?\\.)',
+      end: '(?=$|"|[;,})\\]])',
+      patterns: [
+        {
+          include: '#ternary-operator',
+        },
+        {
+          include: '#angular-expression',
+        },
+      ],
+    },
+  },
 }

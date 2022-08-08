@@ -1,14 +1,14 @@
 {
   repository: {
-    "tag_classes": {
-      "match": "\\.([^\\w-])?[\\w-]*",
-      "captures": {
-        "1": {
-          "name": "invalid.illegal.tag.pug"
-        }
+    tag_classes: {
+      match: '\\.([^\\w-])?[\\w-]*',
+      captures: {
+        '1': {
+          name: 'invalid.illegal.tag.pug',
+        },
       },
-      "name": "support.type.object.module.html"
+      name: 'support.type.object.module.html',
       //"name": "entity.other.attribute-name.class.pug"
-    }
-  }
+    },
+  },
 }

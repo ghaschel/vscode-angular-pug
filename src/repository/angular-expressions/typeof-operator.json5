@@ -1,8 +1,8 @@
 {
   repository: {
-    "typeof-operator": {
-			"name": "keyword.operator.expression.typeof.ts",
-			"match": "(?<!\\.|\\$)\\btypeof\\b(?!\\$)"
-		}
-  }
+    'typeof-operator': {
+      name: 'keyword.operator.expression.typeof.ts',
+      match: '(?<!\\.|\\$)\\btypeof\\b(?!\\$)',
+    },
+  },
 }

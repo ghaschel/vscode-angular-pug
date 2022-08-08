@@ -5,30 +5,30 @@
       begin: '\\(',
       beginCaptures: {
         '0': {
-          name: 'punctuation.definition.parameters.begin.ts'
-        }
+          name: 'punctuation.definition.parameters.begin.ts',
+        },
       },
       end: '\\)',
       endCaptures: {
         '0': {
-          name: 'punctuation.definition.parameters.end.ts'
-        }
+          name: 'punctuation.definition.parameters.end.ts',
+        },
       },
       patterns: [
         {
-          include: '#decorator'
+          include: '#decorator',
         },
         {
-          include: '#parameter-name'
+          include: '#parameter-name',
         },
         {
-          include: '#variable-initializer'
+          include: '#variable-initializer',
         },
         {
           name: 'punctuation.separator.parameter.ts',
-          match: ','
-        }
-      ]
-    }
-  }
+          match: ',',
+        },
+      ],
+    },
+  },
 }

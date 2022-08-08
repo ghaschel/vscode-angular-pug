@@ -1,0 +1,1665 @@
+>//- SYNTAX TEST "text.pug"
+#^^^ text.pug comment.unbuffered.block.pug
+#   ^^^^^^^^^^^^^^^^^^^^^^^^ text.pug comment.unbuffered.block.pug
+>
+>| DOCTYPE
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^ text.pug text.block.pipe.pug
+>doctype html
+#^^^^^^^ text.pug meta.tag.sgml.doctype.html keyword.operator.exclamation
+#       ^^^^^ text.pug meta.tag.sgml.doctype.html constant.character.entity.html
+>
+>| COMMENTS
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^ text.pug text.block.pipe.pug
+>// COMMENTS
+#^^ text.pug comment.buffered.block.pug
+#  ^^^^^^^^^^ text.pug comment.buffered.block.pug
+>
+>| ANGULAR DIRECTIVES
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^^^^^^^^^^^ text.pug text.block.pipe.pug
+>div#testing.testing-class(
+#^^^ text.pug meta.tag.other entity.name.tag.pug
+#   ^^^^^^^^ text.pug keyword.operator.unit
+#           ^^^^^^^^^^^^^^ text.pug support.type.object.module.html
+#                         ^^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>  [binding]="to.element",
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#          ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#           ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#             ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                ^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                        ^^ text.pug meta.tag.other
+>  mat-header-cell
+#^ text.pug meta.tag.other
+# ^ text.pug meta.tag.other punctuation.definition.tag.end.html
+#  ^^^^^^^^^^^^^^^ text.pug meta.tag.other punctuation.definition.tag.end.html support.type.object.html-attribute
+>  *matHeaderCellDef
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                  ^ text.pug meta.tag.other meta.directive.angular
+>  class="test"
+#^^ text.pug meta.tag.other
+#  ^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#       ^ text.pug meta.tag.other attribute_value
+#        ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#         ^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
+#             ^ text.pug meta.tag.other attribute_value string.quoted.pug
+>  *
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other punctuation.definition.tag.end.html string.regexp
+>  [binding_with_underline]="to.function_with_underline()",
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                         ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                          ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                            ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                               ^^^^^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                                                         ^^ text.pug meta.tag.other
+>  [(binding)]="to.element",
+#^^ text.pug meta.tag.other
+#  ^^ text.pug meta.tag.other meta.directive.angular string.regexp
+#    ^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#           ^^ text.pug meta.tag.other meta.directive.angular string.regexp
+#             ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#               ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                  ^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                          ^^ text.pug meta.tag.other
+>  [attr.href]='file?.link',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#       ^ text.pug meta.tag.other meta.directive.angular
+#        ^^^^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#             ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#               ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                   ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                     ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                          ^^ text.pug meta.tag.other
+>  [style.font-size.px]='10',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#        ^ text.pug meta.tag.other meta.directive.angular
+#         ^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.directive.angular
+#                   ^^ text.pug meta.tag.other meta.directive.angular keyword.operator.unit
+#                     ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                      ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                        ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.numeric.decimal.ts
+#                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                           ^^ text.pug meta.tag.other
+>  [@$visibility]='module.$visibility',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#               ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#                ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                  ^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                         ^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                     ^^ text.pug meta.tag.other
+>  [@visibility]='a?.test?.getMenuState()',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#              ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#               ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                  ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                    ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                        ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                          ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                         ^^ text.pug meta.tag.other
+>  (click)='callback(parameter?.test)',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#        ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#         ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#           ^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                    ^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                             ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular punctuation.accessor.ts
+#                               ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.property.ts
+#                                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                     ^^ text.pug meta.tag.other
+>  *ngif='condition.met; else test; then test2',
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#       ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#         ^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                   ^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                        ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.control.else.ts
+#                            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                             ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                   ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.control.then.ts
+#                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                        ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                                              ^^ text.pug meta.tag.other
+>  [test]="test.test();",
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#       ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#        ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#          ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.object.ts
+#              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#               ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.ts
+#                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                       ^^ text.pug meta.tag.other
+>  *ngfor="let a of b; index as c;",
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#        ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#          ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.expression.let.js
+#              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.expression.of.ts
+#                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                      ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                            ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.control.as.ts
+#                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.type.ts
+#                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                                  ^^ text.pug meta.tag.other
+>  *ngTemplateOutlet="TEST; context: { key: value.func(), string: 'string' }"
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#                     ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular constant.character.other
+#                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                           ^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                   ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts punctuation.definition.block.ts
+#                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts
+#                                      ^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts
+#                                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts
+#                                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                           ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts variable.other.object.ts
+#                                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts punctuation.accessor.ts
+#                                                 ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts entity.name.function.ts
+#                                                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.brace.round.ts
+#                                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.brace.round.ts
+#                                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts punctuation.separator.comma.ts
+#                                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts
+#                                                         ^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts
+#                                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts meta.object-literal.key.ts punctuation.separator.key-value.ts
+#                                                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                                                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts string.quoted.single.ts punctuation.definition.string.begin.ts
+#                                                                  ^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts string.quoted.single.ts
+#                                                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts string.quoted.single.ts punctuation.definition.string.end.ts
+#                                                                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts meta.object.member.ts
+#                                                                          ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.objectliteral.ts punctuation.definition.block.ts
+#                                                                           ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+>  [binding]="(observable[a?.test]?.test | async)?.test as test"
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#          ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#           ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#             ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#              ^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts meta.brace.square.ts
+#                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts variable.other.readwrite.ts
+#                          ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts punctuation.accessor.ts
+#                            ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts variable.other.property.ts
+#                                ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts meta.brace.square.ts
+#                                 ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular punctuation.accessor.ts
+#                                   ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.property.ts
+#                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.logical.ts
+#                                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                          ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.pipe.ng
+#                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
+#                                                ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                                  ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                       ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.control.as.ts
+#                                                         ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                          ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.type.ts
+#                                                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+>  [binding]="observable[a?.test]?.test | async as test"
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#          ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#           ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+#             ^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts meta.brace.square.ts
+#                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts variable.other.readwrite.ts
+#                         ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts punctuation.accessor.ts
+#                           ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts variable.other.property.ts
+#                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.array.literal.ts meta.brace.square.ts
+#                                ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.punctuation
+#                                  ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
+#                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.operator.logical.ts
+#                                        ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                         ^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.function.pipe.ng
+#                                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                               ^^ text.pug meta.tag.other meta.directive.angular source.directive.angular keyword.control.as.ts
+#                                                 ^ text.pug meta.tag.other meta.directive.angular source.directive.angular
+#                                                  ^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular entity.name.type.ts
+#                                                      ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
+>  #templatevariable=''
+#^^ text.pug meta.tag.other
+#  ^ text.pug meta.tag.other meta.directive.angular string.regexp
+#   ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular constant.numeric.angular-directive
+#                   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+#                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
+>)
+#^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>
+>
+>| ANGULAR INTERPOLATIONS
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^^^^^^^^^^^^^^^ text.pug text.block.pipe.pug
+>| {{angular.interpolations || test}}
+#^ text.pug text.block.pipe.pug
+# ^^^ text.pug text.block.pipe.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#    ^^^^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.object.ts
+#           ^ text.pug text.block.pipe.pug expression.embedded.angular keyword.operator.navigation
+#            ^^^^^^^^^^^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.readwrite.ts
+#                          ^ text.pug text.block.pipe.pug expression.embedded.angular
+#                           ^^ text.pug text.block.pipe.pug expression.embedded.angular keyword.operator.logical.ts
+#                             ^ text.pug text.block.pipe.pug expression.embedded.angular
+#                              ^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.readwrite.ts
+#                                  ^^ text.pug text.block.pipe.pug expression.embedded.angular string.regexp.angular-interpolation.end
+>| {{angular?.interpolations}}
+#^ text.pug text.block.pipe.pug
+# ^^^ text.pug text.block.pipe.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#    ^^^^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.readwrite.ts
+#           ^^ text.pug text.block.pipe.pug expression.embedded.angular keyword.operator.navigation
+#             ^^^^^^^^^^^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.readwrite.ts
+#                           ^^ text.pug text.block.pipe.pug expression.embedded.angular string.regexp.angular-interpolation.end
+>| {{angular!.interpolations}}
+#^ text.pug text.block.pipe.pug
+# ^^^ text.pug text.block.pipe.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#    ^^^^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.readwrite.ts
+#           ^^ text.pug text.block.pipe.pug expression.embedded.angular keyword.operator.navigation
+#             ^^^^^^^^^^^^^^ text.pug text.block.pipe.pug expression.embedded.angular variable.other.readwrite.ts
+#                           ^^ text.pug text.block.pipe.pug expression.embedded.angular string.regexp.angular-interpolation.end
+>
+>| ENTITIES
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^ text.pug text.block.pipe.pug
+>| &nbsp;
+#^ text.pug text.block.pipe.pug
+# ^ text.pug text.block.pipe.pug
+#  ^ text.pug text.block.pipe.pug constant.character.entity.html keyword.control.semicolon.js
+#   ^^^^ text.pug text.block.pipe.pug constant.character.entity.html
+#       ^ text.pug text.block.pipe.pug constant.character.entity.html keyword.control.amperstand.js
+>| &#0098;
+#^ text.pug text.block.pipe.pug
+# ^ text.pug text.block.pipe.pug
+#  ^ text.pug text.block.pipe.pug constant.character.entity.html keyword.control.semicolon.js
+#   ^^^^^ text.pug text.block.pipe.pug constant.character.entity.html
+#        ^ text.pug text.block.pipe.pug constant.character.entity.html keyword.control.amperstand.js
+>
+>| REGEX
+#^ text.pug text.block.pipe.pug
+# ^^^^^^ text.pug text.block.pipe.pug
+>| /[^@\/#(){31231231}]/
+#^ text.pug text.block.pipe.pug
+# ^ text.pug text.block.pipe.pug
+#  ^^^^^^^^^^^^^^^^^^^^^ text.pug text.block.pipe.pug string.regexp
+>
+>| DOM EVENTS
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^^^ text.pug text.block.pipe.pug
+>div(DOMMenuItemActive='callback()',
+#^^^ text.pug meta.tag.other entity.name.tag.pug
+#   ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#    ^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                       ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                  ^^ text.pug meta.tag.other
+>    DOMMenuItemInactive='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                         ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                    ^^ text.pug meta.tag.other
+>    DOMMouseScroll='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onabort='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onafterprint='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onafterupdate='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onbeforecopy='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onbeforecut='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onbeforeeditfocus='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                       ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                  ^^ text.pug meta.tag.other
+>    onbeforepaste='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onbeforeprint='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onbeforeunload='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onbeforeupdate='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onblur='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    onbounce='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onbroadcast='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    oncanplay='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    oncanplaythrough='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                      ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                 ^^ text.pug meta.tag.other
+>    oncellchange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onchange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onclick='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onclose='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    oncommand='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    oncommandupdate='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                     ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                ^^ text.pug meta.tag.other
+>    oncontextmenu='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    oncopy='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    oncut='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#         ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#           ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                      ^^ text.pug meta.tag.other
+>    ondataavailable='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                     ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                ^^ text.pug meta.tag.other
+>    ondatasetchanged='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                      ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                 ^^ text.pug meta.tag.other
+>    ondatasetcomplete='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                       ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                  ^^ text.pug meta.tag.other
+>    ondblclick='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    ondrag='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    ondragdrop='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    ondragend='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    ondragenter='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    ondragexit='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    ondraggesture='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    ondragleave='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    ondragover='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    ondragstart='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    ondrop='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    ondurationchange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                      ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                 ^^ text.pug meta.tag.other
+>    onemptied='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onended='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onerror='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onerrorupdate='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onfilterchange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onfinish='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onfocus='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onformchange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onforminput='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    ongotpointercapture='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                         ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                    ^^ text.pug meta.tag.other
+>    onhelp='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    oninput='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    oninvalid='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onkeydown='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onkeypress='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    onkeyup='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onload='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    onloadeddata='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onloadedmetadata='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                      ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                 ^^ text.pug meta.tag.other
+>    onloadstart='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onlosecapture='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onlostpointercapture='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                          ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                     ^^ text.pug meta.tag.other
+>    onmousedown='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onmousemove='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onmouseout='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    onmouseover='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onmouseup='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onmousewheel='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onoverflow='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    onoverflowchanged='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                       ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                  ^^ text.pug meta.tag.other
+>    onpaste='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onpause='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onplay='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    onplaying='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onpointercancel='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                     ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                ^^ text.pug meta.tag.other
+>    onpointerdown='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onpointerenter='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onpointerleave='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onpointermove='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onpointerout='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onpointerover='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onpointerup='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onpopuphidden='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onpopuphiding='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onpopupshowing='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onpopupshown='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onprogress='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    onpropertychange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                      ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                 ^^ text.pug meta.tag.other
+>    onratechange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onreadystatechange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                        ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                                   ^^ text.pug meta.tag.other
+>    onreset='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onresize='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onrowenter='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                           ^^ text.pug meta.tag.other
+>    onrowexit='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onrowinserted='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onrowsdelete='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onscroll='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onseeked='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onseeking='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onselect='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onselectstart='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                   ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                              ^^ text.pug meta.tag.other
+>    onshow='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    onstalled='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    onstart='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#             ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                        ^^ text.pug meta.tag.other
+>    onstop='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#            ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                       ^^ text.pug meta.tag.other
+>    onsubmit='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onsuspend='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                          ^^ text.pug meta.tag.other
+>    ontimeupdate='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                 ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                  ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                             ^^ text.pug meta.tag.other
+>    onunderflow='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#               ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                 ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                           ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                            ^^ text.pug meta.tag.other
+>    onunload='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#            ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#              ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                         ^^ text.pug meta.tag.other
+>    onvolumechange='callback()',
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#                    ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                            ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                             ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+#                               ^^ text.pug meta.tag.other
+>    onwaiting='callback()'
+#^^^^ text.pug meta.tag.other
+#    ^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#             ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#               ^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                        ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+>)
+#^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>
+>| STYLE INLINE
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^^^^^ text.pug text.block.pipe.pug
+>div(
+#^^^ text.pug meta.tag.other entity.name.tag.pug
+#   ^^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>    style='display: block;\
+#^^^^ text.pug meta.tag.other
+#    ^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html support.type.object.module.html
+#         ^ text.pug meta.tag.other meta.attribute-with-value.events.html constant.character.entity.html
+#          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.begin.html
+#           ^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html variable.other.readwrite.ts
+#                  ^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                    ^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html variable.other.readwrite.ts
+#                         ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+>           background-color: rgb(255, 255, 255);\
+#^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#           ^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html variable.other.readwrite.ts
+#                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html keyword.operator.arithmetic.ts
+#                      ^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html variable.other.readwrite.ts
+#                           ^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                             ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                                ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                 ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.separator.comma.ts
+#                                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                                      ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.separator.comma.ts
+#                                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                                           ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                               ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+>           color: rgba(33, 254, 12, 1);'
+#^^^^^^^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#           ^^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html variable.other.readwrite.ts
+#                ^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                  ^^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html entity.name.function.ts
+#                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                       ^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                         ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.separator.comma.ts
+#                          ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                           ^^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                              ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.separator.comma.ts
+#                               ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                                ^^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                                  ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.separator.comma.ts
+#                                   ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                                    ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html constant.numeric.decimal.ts
+#                                     ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html meta.brace.round.ts
+#                                      ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html
+#                                       ^ text.pug meta.tag.other meta.attribute-with-value.events.html source.events.html punctuation.definition.string.end.html
+>)
+#^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>
+>| SCRIPT TAG
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^^^ text.pug text.block.pipe.pug
+>script(type='text/javascript').
+#^^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#      ^ text.pug meta.tag.other meta.tag.other constant.name.attribute.tag.pug
+#       ^^^^ text.pug meta.tag.other meta.tag.other entity.other.attribute-name.tag.pug
+#           ^ text.pug meta.tag.other meta.tag.other attribute_value
+#            ^ text.pug meta.tag.other meta.tag.other attribute_value string.quoted.pug
+#             ^^^^^^^^^^^^^^^ text.pug meta.tag.other meta.tag.other attribute_value string.quoted.pug
+#                            ^ text.pug meta.tag.other meta.tag.other attribute_value string.quoted.pug
+#                             ^ text.pug meta.tag.other meta.tag.other constant.name.attribute.tag.pug
+#                              ^ text.pug meta.tag.other
+>  var a;
+#^^ text.pug meta.tag.other
+#  ^^^ text.pug meta.tag.other meta.var.expr.js storage.type.js
+#     ^ text.pug meta.tag.other meta.var.expr.js
+#      ^ text.pug meta.tag.other meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js
+#       ^ text.pug meta.tag.other punctuation.terminator.statement.js
+>  const a = test.callback();
+#^^ text.pug meta.tag.other
+#  ^^^^^ text.pug meta.tag.other meta.var.expr.js storage.type.js
+#       ^ text.pug meta.tag.other meta.var.expr.js
+#        ^ text.pug meta.tag.other meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.constant.js
+#         ^ text.pug meta.tag.other meta.var.expr.js meta.var-single-variable.expr.js
+#          ^ text.pug meta.tag.other meta.var.expr.js keyword.operator.assignment.js
+#           ^ text.pug meta.tag.other meta.var.expr.js
+#            ^^^^ text.pug meta.tag.other meta.var.expr.js meta.function-call.js variable.other.object.js
+#                ^ text.pug meta.tag.other meta.var.expr.js meta.function-call.js punctuation.accessor.js
+#                 ^^^^^^^^ text.pug meta.tag.other meta.var.expr.js meta.function-call.js entity.name.function.js
+#                         ^ text.pug meta.tag.other meta.var.expr.js meta.brace.round.js
+#                          ^ text.pug meta.tag.other meta.var.expr.js meta.brace.round.js
+#                           ^ text.pug meta.tag.other punctuation.terminator.statement.js
+>  let a = test;
+#^^ text.pug meta.tag.other
+#  ^^^ text.pug meta.tag.other meta.var.expr.js storage.type.js
+#     ^ text.pug meta.tag.other meta.var.expr.js
+#      ^ text.pug meta.tag.other meta.var.expr.js meta.var-single-variable.expr.js meta.definition.variable.js variable.other.readwrite.js
+#       ^ text.pug meta.tag.other meta.var.expr.js meta.var-single-variable.expr.js
+#        ^ text.pug meta.tag.other meta.var.expr.js keyword.operator.assignment.js
+#         ^ text.pug meta.tag.other meta.var.expr.js
+#          ^^^^ text.pug meta.tag.other meta.var.expr.js variable.other.readwrite.js
+#              ^ text.pug meta.tag.other punctuation.terminator.statement.js
+>  function test(variable) {
+#^^ text.pug meta.tag.other
+#  ^^^^^^^^ text.pug meta.tag.other meta.function.js storage.type.function.js
+#          ^ text.pug meta.tag.other meta.function.js
+#           ^^^^ text.pug meta.tag.other meta.function.js meta.definition.function.js entity.name.function.js
+#               ^ text.pug meta.tag.other meta.function.js meta.parameters.js punctuation.definition.parameters.begin.js
+#                ^^^^^^^^ text.pug meta.tag.other meta.function.js meta.parameters.js variable.parameter.js
+#                        ^ text.pug meta.tag.other meta.function.js meta.parameters.js punctuation.definition.parameters.end.js
+#                         ^ text.pug meta.tag.other meta.function.js
+#                          ^ text.pug meta.tag.other meta.function.js meta.block.js punctuation.definition.block.js
+>    return boolean;
+#^^^^ text.pug meta.tag.other meta.function.js meta.block.js
+#    ^^^^^^ text.pug meta.tag.other meta.function.js meta.block.js keyword.control.flow.js
+#          ^ text.pug meta.tag.other meta.function.js meta.block.js
+#           ^^^^^^^ text.pug meta.tag.other meta.function.js meta.block.js variable.other.readwrite.js
+#                  ^ text.pug meta.tag.other meta.function.js meta.block.js punctuation.terminator.statement.js
+>  }
+#^^ text.pug meta.tag.other meta.function.js meta.block.js
+#  ^ text.pug meta.tag.other meta.function.js meta.block.js punctuation.definition.block.js
+>
+>| GENERIC ATTRIBUTES
+#^ text.pug text.block.pipe.pug
+# ^^^^^^^^^^^^^^^^^^^ text.pug text.block.pipe.pug
+>div#test.test(aria-label='test', no-value='', novalidate='')
+#^^^ text.pug meta.tag.other entity.name.tag.pug
+#   ^^^^^ text.pug keyword.operator.unit
+#        ^^^^^ text.pug support.type.object.module.html
+#             ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#              ^^^^^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                        ^ text.pug meta.tag.other attribute_value
+#                         ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                          ^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                              ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                               ^ text.pug meta.tag.other
+#                                ^ text.pug meta.tag.other punctuation.definition.tag.end.html
+#                                 ^^^ text.pug meta.tag.other punctuation.definition.tag.end.html support.type.object.html-attribute
+#                                    ^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                                         ^ text.pug meta.tag.other attribute_value
+#                                          ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                           ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                            ^^ text.pug meta.tag.other
+#                                              ^^^^^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                                                        ^ text.pug meta.tag.other attribute_value
+#                                                         ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                          ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#                                                           ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>input(type='')
+#^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#     ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+#      ^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#          ^ text.pug meta.tag.other attribute_value
+#           ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#            ^ text.pug meta.tag.other attribute_value string.quoted.pug
+#             ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>label.teste
+#^^^^^ text.pug meta.tag.other entity.name.tag.pug
+#     ^^^^^^ text.pug support.type.object.module.html
+>
+>

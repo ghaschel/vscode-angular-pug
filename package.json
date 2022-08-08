@@ -15,7 +15,10 @@
   "scripts": {
     "watch": "npx gulp watch",
     "compile-json": "npx gulp compile-json",
-    "publish": "standard-version && git push --follow-tags origin master && vsce publish"
+    "publish": "standard-version && git push --follow-tags origin master && vsce publish",
+    "postinstall": "node scripts/postinstall.js",
+    "test": "npx vscode-tmgrammar-test -g syntaxes/angular-pug.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/text.html.basic.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist test/*.pug",
+    "update-snapshots": "npx vscode-tmgrammar-snap -s text.pug -g syntaxes/angular-pug.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/text.html.basic.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist --updateSnapshot test/*.pug"
   },
   "engines": {
     "vscode": "^1.20.0"
@@ -58,11 +61,13 @@
     "gulp": "^4.0.2",
     "gulp-json5-to-json": "^0.2.1",
     "gulp-merge-json": "^2.1.2",
+    "gulp-prettier": "^4.0.0",
     "husky": "^8.0.1",
     "json-beautify": "^1.1.1",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "vscode-tmgrammar-test": "^0.1.1"
   },
   "__metadata": {
     "id": "9bd7fabe-8030-4cc2-84c0-61ffea1b86d3",
@@ -73,7 +78,7 @@
     "husky": {
       "hooks": {
         "prepare-commit-msg": "exec < /dev/tty && git cz --hook || true",
-        "pre-commit": "npm run compile-json && pretty-quick --staged",
+        "pre-commit": "npm run test && npm run compile-json && pretty-quick --staged",
         "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
       }
     },

@@ -6,39 +6,39 @@
       patterns: [
         {
           name: 'punctuation.accessor.ts',
-          match: '\\.'
+          match: '\\.',
         },
         {
           name: 'entity.name.function.ts',
-          match: '([_$[:alpha:]][_$[:alnum:]]*)'
+          match: '([_$[:alpha:]][_$[:alnum:]]*)',
         },
         {
           name: 'meta.type.parameters.ts',
           begin: '\\<',
           beginCaptures: {
             '0': {
-              name: 'punctuation.definition.typeparameters.begin.ts'
-            }
+              name: 'punctuation.definition.typeparameters.begin.ts',
+            },
           },
           end: '\\>',
           endCaptures: {
             '0': {
-              name: 'punctuation.definition.typeparameters.end.ts'
-            }
+              name: 'punctuation.definition.typeparameters.end.ts',
+            },
           },
           patterns: [
             {
-              include: '#type'
+              include: '#type',
             },
             {
-              include: '#punctuation-comma'
-            }
-          ]
+              include: '#punctuation-comma',
+            },
+          ],
         },
         {
-          include: '#paren-expression'
-        }
-      ]
-    }
-  }
+          include: '#paren-expression',
+        },
+      ],
+    },
+  },
 }

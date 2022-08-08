@@ -4,36 +4,36 @@
       name: 'meta.expression.ts',
       patterns: [
         {
-          include: '#ts-string'
+          include: '#ts-string',
         },
         {
-          include: '#literal'
+          include: '#literal',
         },
         {
-          include: '#ternary-expression'
+          include: '#ternary-expression',
         },
         {
-          include: '#object-literal'
+          include: '#object-literal',
         },
         {
-          include: '#expression-operators'
+          include: '#expression-operators',
         },
         {
-          include: '#function-call'
+          include: '#function-call',
         },
         {
-          include: '#identifiers'
+          include: '#identifiers',
         },
         {
-          include: '#paren-expression'
+          include: '#paren-expression',
         },
         {
-          include: '#punctuation-comma'
+          include: '#punctuation-comma',
         },
         {
-          include: '#punctuation-accessor'
-        }
-      ]
-    }
-  }
+          include: '#punctuation-accessor',
+        },
+      ],
+    },
+  },
 }
