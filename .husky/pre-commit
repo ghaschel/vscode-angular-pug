@@ -1,3 +1,6 @@
-npm run test
-npm run compile-json
-pretty-quick --staged
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npm run compile-json;
+npm test;
+npx pretty-quick --staged

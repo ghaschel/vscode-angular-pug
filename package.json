@@ -18,7 +18,8 @@
     "publish": "standard-version && git push --follow-tags origin master && vsce publish",
     "postinstall": "node scripts/postinstall.js",
     "test": "npx vscode-tmgrammar-test -g syntaxes/angular-pug.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/text.html.basic.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist test/*.pug",
-    "update-snapshots": "npx vscode-tmgrammar-snap -s text.pug -g syntaxes/angular-pug.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/text.html.basic.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist --updateSnapshot test/*.pug"
+    "update-snapshots": "npx vscode-tmgrammar-snap -s text.pug -g syntaxes/angular-pug.tmLanguage.json -g test/externalGrammars/source.css.tmLanguage.json -g test/externalGrammars/source.js.tmLanguage.json -g test/externalGrammars/text.html.basic.tmLanguage.json -g test/externalGrammars/source.css.scss.tmLanguage.json -g test/externalGrammars/source.css.less.tmLanguage.json -g test/externalGrammars/source.sassdoc.tmLanguage.json -g test/externalGrammars/source.stylus.tmLanguage.json -g test/externalGrammars/source.coffee.tmLanguage.json -g test/externalGrammars/source.js.regexp.tmLanguage.plist --updateSnapshot test/*.pug",
+    "prepare": "husky install"
   },
   "engines": {
     "vscode": "^1.20.0"
@@ -62,7 +63,7 @@
     "gulp-json5-to-json": "^0.2.1",
     "gulp-merge-json": "^2.1.2",
     "gulp-prettier": "^4.0.0",
-    "husky": "^8.0.1",
+    "husky": "^7.0.0",
     "json-beautify": "^1.1.1",
     "prettier": "^2.7.1",
     "pretty-quick": "^3.1.3",
