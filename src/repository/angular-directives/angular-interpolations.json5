@@ -5,29 +5,28 @@
         {
           beginCaptures: {
             '0': {
-              name: 'string.regexp.angular-interpolation.begin'
-            }
+              name: 'string.regexp.angular-interpolation.begin',
+            },
           },
           patterns: [
             {
               match: '\\?\\.|\\!\\.|\\.|\\!|\\?|\\:|\\;|\\,',
-              name: 'keyword.operator.navigation'
+              name: 'keyword.operator.navigation',
             },
             {
-              include: '#angular-expression'
-            }
+              include: '#angular-expression',
+            },
           ],
           begin: '\\s*\\{\\{',
           endCaptures: {
             '0': {
-              name: 'string.regexp.angular-interpolation.end'
-            }
+              name: 'string.regexp.angular-interpolation.end',
+            },
           },
           end: '\\}\\}',
-          name: 'expression.embedded.angular'
-        }
-      ]
-    }
-  }
+          name: 'expression.embedded.angular',
+        },
+      ],
+    },
+  },
 }
-
