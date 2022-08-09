@@ -1,4 +1,12 @@
-# Change Log
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.3.2](https://github.com/ghaschel/vscode-angular-pug/compare/v0.3.0...v0.3.2) (2022-08-09)
+
+### Features
+
+- **template interpolation:** feature support and bugfix ([55a7ba1](https://github.com/ghaschel/vscode-angular-pug/commit/55a7ba167d517e5fbb9a610f3bc5352c8791c84f))
 
 # 0.3.1 (19/06/2020)
 
