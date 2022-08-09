@@ -27,7 +27,7 @@ div#testing.testing-class(
   [binding]="(observable[a?.test]?.test | async)?.test as test"
   [binding]="observable[a?.test]?.test | async as test"
   #templatevariable=''
-)
+) test
 
 
 | ANGULAR INTERPOLATIONS
@@ -178,5 +178,5 @@ script(type='text/javascript').
 | GENERIC ATTRIBUTES
 div#test.test(aria-label='test', no-value='', novalidate='')
 input(type='')
-label.teste
+label.teste {{test}}
 

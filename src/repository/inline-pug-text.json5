@@ -5,6 +5,9 @@
       end: '(?=\\])',
       patterns: [
         {
+          include: '#angular-interpolations',
+        },
+        {
           begin: '\\[',
           end: '\\]',
           patterns: [

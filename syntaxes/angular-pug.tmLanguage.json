@@ -596,6 +596,9 @@
       "end": "(?=\\])",
       "patterns": [
         {
+          "include": "#angular-interpolations"
+        },
+        {
           "begin": "\\[",
           "end": "\\]",
           "patterns": [
@@ -842,7 +845,7 @@
     "tag_attribute_name_paren": {
       "begin": "\\(\\s*",
       "end": "\\)",
-      "name": "support.type.object.module.html",
+      "name": "entity.other.attribute-name.tag.pug",
       "patterns": [
         {
           "include": "#tag_attribute_name_paren"
@@ -1032,7 +1035,7 @@
           "name": "support.type.object.html-attribute"
         }
       },
-      "match": "(?<!<|\\/)(\\*)+|\\s(\\b[\\w\\-\\:]+)\\b\\s?(?!=)",
+      "match": "(?<!<|\\/)(\\*)+|[^,]\\s(\\b[\\w\\-\\:]+)\\b\\s?(?!=)",
       "name": "punctuation.definition.tag.end.html"
     },
     "tag_mixin_attributes": {
@@ -1079,6 +1082,9 @@
       "begin": "(?=.)",
       "end": "$",
       "patterns": [
+        {
+          "include": "#angular-interpolations"
+        },
         {
           "include": "#inline_pug"
         },

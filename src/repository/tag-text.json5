@@ -5,6 +5,9 @@
       end: '$',
       patterns: [
         {
+          include: '#angular-interpolations',
+        },
+        {
           include: '#inline_pug',
         },
         {

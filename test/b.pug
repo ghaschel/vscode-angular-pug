@@ -17,6 +17,8 @@ cs-toolbar(
     ) {{ previousStepText || "" | translate }}
     ng-content(*ngIf='customReturn')
 
+  p hello there {{test}} #[span {{test}} i am happy] to meet you
+
   nav.wrapper(middle, #wizardContainer)
     .selected(*ngIf='!isWizardVisible')
       {{ currentStepText || "" | translate }}
@@ -32,4 +34,8 @@ cs-toolbar(
           }`
         )
           span.step((click)='onSetStep(step.id)') {{ step?.text || "" | translate }}
-          span.icon.cs-icon-right
+          span.icon.cs-icon-right test
+
+
+
+

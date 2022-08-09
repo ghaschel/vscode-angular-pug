@@ -8,7 +8,6 @@
         },
       },
       name: 'support.type.object.module.html',
-      //"name": "entity.other.attribute-name.class.pug"
     },
   },
 }

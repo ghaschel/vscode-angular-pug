@@ -3,8 +3,7 @@
     tag_attribute_name_paren: {
       begin: '\\(\\s*',
       end: '\\)',
-      name: 'support.type.object.module.html',
-      //"name": "entity.other.attribute-name.tag.pug",
+      name: 'entity.other.attribute-name.tag.pug',
       patterns: [
         {
           include: '#tag_attribute_name_paren',
