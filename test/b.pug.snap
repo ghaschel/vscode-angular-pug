@@ -161,7 +161,20 @@
 >    ) {{ previousStepText || "" | translate }}
 #^^^^ text.pug meta.tag.other
 #    ^ text.pug meta.tag.other constant.name.attribute.tag.pug
-#     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug
+#     ^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#        ^ text.pug expression.embedded.angular
+#         ^^^^^^^^^^^^^^^^ text.pug expression.embedded.angular variable.other.readwrite.ts
+#                         ^ text.pug expression.embedded.angular
+#                          ^^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                            ^ text.pug expression.embedded.angular
+#                             ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                              ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                               ^ text.pug expression.embedded.angular
+#                                ^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                                 ^ text.pug expression.embedded.angular
+#                                  ^^^^^^^^^ text.pug expression.embedded.angular entity.name.function.pipe.ng
+#                                           ^ text.pug expression.embedded.angular
+#                                            ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
 >    ng-content(*ngIf='customReturn')
 #^^^^ text.pug
 #    ^^^^^^^^^^ text.pug meta.tag.other entity.name.tag.pug
@@ -173,6 +186,23 @@
 #                      ^^^^^^^^^^^^ text.pug meta.tag.other meta.directive.angular source.directive.angular variable.other.readwrite.ts
 #                                  ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
 #                                   ^ text.pug meta.tag.other constant.name.attribute.tag.pug
+>
+>  p hello there {{test}} #[span {{test}} i am happy] to meet you
+#^^ text.pug
+#  ^ text.pug meta.tag.other entity.name.tag.pug
+#   ^^^^^^^^^^^^ text.pug
+#               ^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#                  ^^^^ text.pug expression.embedded.angular variable.other.readwrite.ts
+#                      ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
+#                        ^ text.pug
+#                         ^^ text.pug inline.pug entity.name.function.pug
+#                           ^^^^ text.pug inline.pug tag.inline.pug meta.tag.other entity.name.tag.pug
+#                               ^^^ text.pug inline.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#                                  ^^^^ text.pug inline.pug expression.embedded.angular variable.other.readwrite.ts
+#                                      ^^ text.pug inline.pug expression.embedded.angular string.regexp.angular-interpolation.end
+#                                        ^^^^^^^^^^^ text.pug inline.pug
+#                                                   ^ text.pug inline.pug entity.name.function.pug
+#                                                    ^^^^^^^^^^^^ text.pug
 >
 >  nav.wrapper(middle, #wizardContainer)
 #^^ text.pug
@@ -228,10 +258,8 @@
 #                                     ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                                      ^^^^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                                             ^ text.pug meta.tag.other attribute_value string.quoted.pug
-#                                              ^ text.pug meta.tag.other
-#                                               ^ text.pug meta.tag.other punctuation.definition.tag.end.html
-#                                                ^^^^^ text.pug meta.tag.other punctuation.definition.tag.end.html support.type.object.html-attribute
-#                                                     ^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                                              ^^ text.pug meta.tag.other
+#                                                ^^^^^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
 #                                                          ^ text.pug meta.tag.other attribute_value
 #                                                           ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
@@ -347,10 +375,30 @@
 #                                              ^ text.pug meta.tag.other meta.directive.angular source.directive.angular meta.brace.round.ts
 #                                               ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
 #                                                ^ text.pug meta.tag.other constant.name.attribute.tag.pug
-#                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug
->          span.icon.cs-icon-right
+#                                                 ^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#                                                    ^ text.pug expression.embedded.angular
+#                                                     ^^^^ text.pug expression.embedded.angular variable.other.readwrite.ts
+#                                                         ^^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                           ^^^^ text.pug expression.embedded.angular variable.other.readwrite.ts
+#                                                               ^ text.pug expression.embedded.angular
+#                                                                ^^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                                                                  ^ text.pug expression.embedded.angular
+#                                                                   ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                                                                    ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                                                     ^ text.pug expression.embedded.angular
+#                                                                      ^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                                                                       ^ text.pug expression.embedded.angular
+#                                                                        ^^^^^^^^^ text.pug expression.embedded.angular entity.name.function.pipe.ng
+#                                                                                 ^ text.pug expression.embedded.angular
+#                                                                                  ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
+>          span.icon.cs-icon-right test
 #^^^^^^^^^^ text.pug
 #          ^^^^ text.pug meta.tag.other entity.name.tag.pug
 #              ^^^^^ text.pug support.type.object.module.html
 #                   ^^^^^^^^^^^^^^ text.pug support.type.object.module.html
+#                                 ^^^^^ text.pug
+>
+>
+>
+>
 >

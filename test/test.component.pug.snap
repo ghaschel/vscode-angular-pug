@@ -37,8 +37,7 @@
 #                       ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.double.html
 #                        ^^ text.pug meta.tag.other
 >  mat-header-cell
-#^ text.pug meta.tag.other
-# ^ text.pug meta.tag.other punctuation.definition.tag.end.html
+#^^ text.pug meta.tag.other punctuation.definition.tag.end.html
 #  ^^^^^^^^^^^^^^^ text.pug meta.tag.other punctuation.definition.tag.end.html support.type.object.html-attribute
 >  *matHeaderCellDef
 #^^ text.pug meta.tag.other
@@ -304,8 +303,9 @@
 #                   ^ text.pug meta.tag.other meta.directive.angular constant.character.entity.html
 #                    ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
 #                     ^ text.pug meta.tag.other meta.directive.angular source.directive.angular string.quoted.single.html
->)
+>) test
 #^ text.pug meta.tag.other constant.name.attribute.tag.pug
+# ^^^^^ text.pug
 >
 >
 >| ANGULAR INTERPOLATIONS
@@ -1637,10 +1637,8 @@
 #                         ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                          ^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                              ^ text.pug meta.tag.other attribute_value string.quoted.pug
-#                               ^ text.pug meta.tag.other
-#                                ^ text.pug meta.tag.other punctuation.definition.tag.end.html
-#                                 ^^^ text.pug meta.tag.other punctuation.definition.tag.end.html support.type.object.html-attribute
-#                                    ^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
+#                               ^^ text.pug meta.tag.other
+#                                 ^^^^^^^^ text.pug meta.tag.other entity.other.attribute-name.tag.pug
 #                                         ^ text.pug meta.tag.other attribute_value
 #                                          ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                                           ^ text.pug meta.tag.other attribute_value string.quoted.pug
@@ -1658,8 +1656,11 @@
 #           ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #            ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #             ^ text.pug meta.tag.other constant.name.attribute.tag.pug
->label.teste
+>label.teste {{test}}
 #^^^^^ text.pug meta.tag.other entity.name.tag.pug
 #     ^^^^^^ text.pug support.type.object.module.html
+#           ^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#              ^^^^ text.pug expression.embedded.angular variable.other.readwrite.ts
+#                  ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
 >
 >

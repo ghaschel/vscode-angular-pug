@@ -388,7 +388,28 @@
 >          span {{ "Already a member?" | translate: null:"":"Subheading" }} &nbsp;
 #^^^^^^^^^^ text.pug
 #          ^^^^ text.pug meta.tag.other entity.name.tag.pug
-#              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug
+#              ^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#                 ^ text.pug expression.embedded.angular
+#                  ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                   ^^^^^^^^^^^^^^^^^ text.pug expression.embedded.angular string.quoted.double.ts
+#                                    ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                     ^ text.pug expression.embedded.angular
+#                                      ^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                                       ^ text.pug expression.embedded.angular
+#                                        ^^^^^^^^^ text.pug expression.embedded.angular entity.name.function.pipe.ng
+#                                                 ^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                  ^ text.pug expression.embedded.angular
+#                                                   ^^^^ text.pug expression.embedded.angular constant.language.null.ts
+#                                                       ^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                        ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                                                         ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                                          ^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                           ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                                                            ^^^^^^^^^^ text.pug expression.embedded.angular string.quoted.double.ts
+#                                                                      ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                                                       ^ text.pug expression.embedded.angular
+#                                                                        ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
+#                                                                          ^ text.pug
 #                                                                           ^ text.pug constant.character.entity.html keyword.control.semicolon.js
 #                                                                            ^^^^ text.pug constant.character.entity.html
 #                                                                                ^ text.pug constant.character.entity.html keyword.control.amperstand.js
@@ -402,5 +423,25 @@
 #                        ^^^^^^^^^^^^^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                                     ^ text.pug meta.tag.other attribute_value string.quoted.pug
 #                                      ^ text.pug meta.tag.other constant.name.attribute.tag.pug
-#                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ text.pug
+#                                       ^^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.begin
+#                                          ^ text.pug expression.embedded.angular
+#                                           ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                                            ^^^^^^^^^^^^^^^^^^^^^^^ text.pug expression.embedded.angular string.quoted.double.ts
+#                                                                   ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                                                    ^ text.pug expression.embedded.angular
+#                                                                     ^ text.pug expression.embedded.angular keyword.operator.logical.ts
+#                                                                      ^ text.pug expression.embedded.angular
+#                                                                       ^^^^^^^^^ text.pug expression.embedded.angular entity.name.function.pipe.ng
+#                                                                                ^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                                                 ^ text.pug expression.embedded.angular
+#                                                                                  ^^^^ text.pug expression.embedded.angular constant.language.null.ts
+#                                                                                      ^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                                                       ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                                                                                        ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                                                                         ^ text.pug expression.embedded.angular keyword.operator.navigation
+#                                                                                          ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.begin.ts
+#                                                                                           ^^^^^^ text.pug expression.embedded.angular string.quoted.double.ts
+#                                                                                                 ^ text.pug expression.embedded.angular string.quoted.double.ts punctuation.definition.string.end.ts
+#                                                                                                  ^ text.pug expression.embedded.angular
+#                                                                                                   ^^ text.pug expression.embedded.angular string.regexp.angular-interpolation.end
 >
