@@ -3,8 +3,8 @@
 [![GitHub issues](https://img.shields.io/github/issues/ghaschel/vscode-angular-pug.svg)](https://github.com/ghaschel/vscode-angular-pug/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ghaschel/vscode-angular-pug/blob/master/LICENSE)
 [![Build status](https://travis-ci.org/ghaschel/vscode-angular-pug.svg?branch=master)](https://travis-ci.org/ghaschel/vscode-angular-pug.svg?branch=master)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-pug-html)
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-pug-html) [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-pug.svg)](https://greenkeeper.io/)
+[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
+[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug) [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-pug.svg)](https://greenkeeper.io/)
 
 <div align="center">
     <img src="https://raw.githubusercontent.com/ghaschel/vscode-angular-pug/master/assets/angular-pug.png" title="vscode-angular-pug" alt="Logo" />
