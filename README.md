@@ -3,10 +3,9 @@
 [![GitHub issues](https://img.shields.io/github/issues/ghaschel/vscode-angular-pug.svg)](https://github.com/ghaschel/vscode-angular-pug/issues)
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/ghaschel/vscode-angular-pug/blob/master/LICENSE)
 [![NodeJS with Gulp](https://github.com/ghaschel/vscode-angular-pug/actions/workflows/npm-gulp.yml/badge.svg?event=push)](https://github.com/ghaschel/vscode-angular-pug/actions/workflows/npm-gulp.yml)
-[![Installs](https://vsmarketplacebadge.apphb.com/installs-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
-[![Installs](https://vsmarketplacebadge.apphb.com/downloads-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
-[![Installs](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
-[![Version](https://vsmarketplacebadge.apphb.com/version-short/ghaschel.vscode-angular-pug.svg?style=flat&color=blue)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
+[![Downloads](https://vsmarketplacebadges.dev/downloads-short/ghaschel.vscode-angular-pug.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
+[![Installs](https://vsmarketplacebadges.dev/installs-short/ghaschel.vscode-angular-pug.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
+[![Version](https://vsmarketplacebadges.dev/version-short/ghaschel.vscode-angular-pug.png)](https://marketplace.visualstudio.com/items?itemName=ghaschel.vscode-angular-pug)
 [![Greenkeeper badge](https://badges.greenkeeper.io/ghaschel/vscode-angular-pug.svg)](https://greenkeeper.io/)
 
 <div align="center">
